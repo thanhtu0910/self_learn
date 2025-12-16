@@ -72,66 +72,55 @@
         </h2>
         <div class="w-20 h-1 bg-red-600 mx-auto mb-12 rounded"></div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- CARD -->
-          <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
-            <h3 class="text-red-600 font-bold">VIP1</h3>
-            <p class="text-sm mb-4">3.000đ/ngày</p>
-            <ul class="text-sm space-y-2 mb-6">
-              <li>• Soạn: DK4 gửi 9636</li>
-              <li>• Thoải mái data chơi game, Facebook, TikTok, Youtube</li>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left: featured large card -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border">
+            <h3 class="text-2xl font-bold text-red-600 mb-2">VIP1</h3>
+            <div class="text-lg text-red-600 font-semibold mb-4">3.000đ / ngày</div>
+            <ul class="text-gray-700 space-y-2 mb-6">
+              <li>• Soạn: <span class="font-medium">DK4</span> gửi <span class="font-medium">9636</span></li>
+              <li>• Thoải mái data cho social, video</li>
+              <li>• Phù hợp dùng trong ngày</li>
             </ul>
-            <button onclick="smsbutton('9636','DK4')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
+            <div class="bg-gray-50 p-4 rounded mb-6 border">
+              <div class="text-sm text-gray-600">Mở ứng dụng nhắn tin và gửi mã hoặc nhấn nút đăng ký.</div>
+            </div>
+            <button onclick="smsbutton('9636','DK4')" class="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-semibold">Đăng ký VIP1 ngay</button>
           </div>
 
-          <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
-            <h3 class="text-red-600 font-bold">SD90</h3>
-            <p class="text-sm mb-4">90.000đ/30 ngày</p>
-            <ul class="text-sm space-y-2 mb-6">
-              <li>• Soạn: SD90 ON1 gửi 290</li>
-              <li>• 1.5GB data 3G/4G tốc độ cao mỗi ngày</li>
-            </ul>
-            <button onclick="smsbutton('290','SD90 ON1')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
-          </div>
+          <!-- Right: three stacked plans -->
+          <div class="space-y-6">
+            <div class="bg-white rounded-xl p-6 shadow flex items-center justify-between">
+              <div>
+                <h4 class="font-bold text-red-600">SD90</h4>
+                <div class="text-sm text-gray-700">90.000đ / 30 ngày — 1.5GB/ngày</div>
+                <div class="text-sm text-gray-500">Soạn: SD90 ON1 gửi 290</div>
+              </div>
+              <button onclick="smsbutton('290','SD90 ON1')" class="bg-red-500 hover:bg-red-600 text-white py-2 px-5 rounded-lg font-semibold">Đăng ký</button>
+            </div>
 
-          <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
-            <h3 class="text-red-600 font-bold">MXH100</h3>
-            <p class="text-sm mb-4">100.000đ/30 ngày</p>
-            <ul class="text-sm space-y-2 mb-6">
-              <li>• Soạn: MXH100 ON1 gửi 290</li>
-              <li>• 1GB/ngày + miễn phí TikTok, Youtube, Facebook</li>
-            </ul>
-            <button onclick="smsbutton('290','MXH100 ON1')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
-          </div>
+            <div class="bg-white rounded-xl p-6 shadow flex items-center justify-between">
+              <div>
+                <h4 class="font-bold text-red-600">MXH100</h4>
+                <div class="text-sm text-gray-700">100.000đ / 30 ngày — 1GB/ngày + social</div>
+                <div class="text-sm text-gray-500">Soạn: MXH100 ON1 gửi 290</div>
+              </div>
+              <button onclick="smsbutton('290','MXH100 ON1')" class="bg-red-500 hover:bg-red-600 text-white py-2 px-5 rounded-lg font-semibold">Đăng ký</button>
+            </div>
 
-          <div
-            class="bg-gray-100 rounded-xl p-6 shadow border-2 border-red-600 flex flex-col h-full"
-          >
-            <h3 class="text-red-700 font-bold">SD135</h3>
-            <p class="text-sm mb-4">135.000đ/30 ngày</p>
-            <ul class="text-sm space-y-2 mb-6">
-              <li>• Soạn: SD135 ON1 gửi 290</li>
-              <li>• 5GB data 3G/4G tốc độ cao mỗi ngày</li>
-            </ul>
-            <button onclick="smsbutton('290','SD135 ON1')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
+            <div class="bg-white rounded-xl p-6 shadow flex items-center justify-between border-2 border-red-100">
+              <div>
+                <h4 class="font-bold text-red-700">SD135</h4>
+                <div class="text-sm text-gray-700">135.000đ / 30 ngày — 5GB/ngày</div>
+                <div class="text-sm text-gray-500">Soạn: SD135 ON1 gửi 290</div>
+              </div>
+              <button onclick="smsbutton('290','SD135 ON1')" class="bg-red-500 hover:bg-red-600 text-white py-2 px-5 rounded-lg font-semibold">Đăng ký</button>
+            </div>
           </div>
+        </div>
 
+        <!-- Remaining plans (moved below) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
           <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
             <h3 class="text-red-600 font-bold">NGÀY</h3>
             <p class="text-sm mb-4">3.000đ/ngày</p>
@@ -140,11 +129,7 @@
               <li>• 3G/4G tốc độ cao KHÔNG GIỚI HẠN</li>
               <li>• Lướt web, Facebook, Youtube</li>
             </ul>
-            <button   onclick="smsbutton('9326','DK')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
+            <button onclick="smsbutton('9326','DK')" class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">Đăng ký</button>
           </div>
 
           <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
@@ -154,11 +139,7 @@
               <li>• Soạn: 5G150 ON1 gửi 290</li>
               <li>• 6GB/ngày - dùng mạng 4G/5G</li>
             </ul>
-            <button onclick="smsbutton('290','5G150 ON1')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
+            <button onclick="smsbutton('290','5G150 ON1')" class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">Đăng ký</button>
           </div>
 
           <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
@@ -168,11 +149,7 @@
               <li>• Soạn: 5G150N ON1 gửi 290</li>
               <li>• 8GB/ngày - mạng 5G</li>
             </ul>
-            <button onclick="smsbutton('290','5G150N ON1')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
+            <button onclick="smsbutton('290','5G150N ON1')" class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">Đăng ký</button>
           </div>
 
           <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
@@ -182,25 +159,7 @@
               <li>• Soạn: V160B ON1 gửi 290</li>
               <li>• 4GB/ngày + miễn phí gọi nội & ngoại mạng</li>
             </ul>
-            <button   onclick="smsbutton('290','V160B ON1')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
-          </div>
-
-          <div class="bg-gray-100 rounded-xl p-6 shadow flex flex-col h-full">
-            <h3 class="text-red-600 font-bold">5G230B</h3>
-            <p class="text-sm mb-4">230.000đ/30 ngày</p>
-            <ul class="text-sm space-y-2 mb-6">
-              <li>• Soạn: 5G230B ON1 gửi 290</li>
-              <li>• 8GB/ngày + gọi nội & ngoại mạng</li>
-            </ul>
-            <button  onclick="smsbutton('290','5G230B ON1')"
-              class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition"
-            >
-              Đăng ký
-            </button>
+            <button onclick="smsbutton('290','V160B ON1')" class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">Đăng ký</button>
           </div>
         </div>
       </section>
@@ -262,49 +221,12 @@
 
       <section class="max-w-7xl mx-auto bg-white rounded-xl shadow-sm p-8">
   <h2 class="text-3xl font-bold mb-6">
-    Điều gì khiến khách hàng luôn tin tưởng và sử dụng Internet Viettel?
+    Viettel – Dẫn đầu công nghệ viễn thông tại Việt Nam
   </h2>
 
   <div class="space-y-4 text-gray-700 leading-relaxed">
     <p>
-      Viettel là một trong những nhà mạng viễn thông hàng đầu tại Việt Nam, được
-      hàng triệu khách hàng trên toàn quốc tin tưởng lựa chọn trong suốt nhiều
-      năm qua. Với lợi thế về hạ tầng mạng lưới rộng khắp, Viettel luôn đảm bảo
-      chất lượng đường truyền internet ổn định, tốc độ cao và khả năng phủ sóng
-      mạnh mẽ ngay cả tại các khu vực vùng sâu, vùng xa.
-    </p>
-
-    <p>
-      Hiện nay, Viettel sở hữu hơn <b>365.000 km cáp quang</b> cùng nhiều tuyến cáp
-      quang kết nối quốc tế trên cả đất liền và dưới biển, giúp tối ưu băng thông
-      và giảm thiểu tình trạng nghẽn mạng trong giờ cao điểm. Nhờ đó, khách hàng
-      có thể thoải mái lướt web, xem video, học tập trực tuyến, làm việc từ xa hay
-      giải trí trên các nền tảng như Facebook, YouTube, TikTok với trải nghiệm
-      mượt mà và liên tục.
-    </p>
-
-    <p>
-      Không chỉ chú trọng vào tốc độ, Viettel còn liên tục ứng dụng các công nghệ
-      tiên tiến nhằm nâng cao chất lượng dịch vụ như <b>4G LTE, 5G</b>, công nghệ
-      <b>xGSPON</b>, <b>Mesh WiFi</b>, cùng các giải pháp thông minh như
-      <b>Camera AI</b>. Những công nghệ này giúp tối ưu khả năng kết nối, tăng độ
-      ổn định và đáp ứng tốt nhu cầu sử dụng internet ngày càng cao của người
-      dùng.
-    </p>
-
-    <p>
-      Bên cạnh đó, hệ thống chăm sóc khách hàng của Viettel hoạt động 24/7, sẵn
-      sàng hỗ trợ giải đáp thắc mắc, hướng dẫn đăng ký và xử lý các vấn đề phát
-      sinh trong quá trình sử dụng dịch vụ. Với nhiều gói cước linh hoạt theo
-      ngày, theo tháng và đa dạng dung lượng, Viettel mang đến cho khách hàng
-      nhiều lựa chọn phù hợp với từng nhu cầu sử dụng khác nhau.
-    </p>
-
-    <p>
-      Chính sự kết hợp giữa hạ tầng mạnh mẽ, công nghệ hiện đại, dịch vụ ổn định
-      và chính sách gói cước hợp lý đã giúp Viettel trở thành sự lựa chọn hàng đầu
-      của đông đảo khách hàng khi có nhu cầu sử dụng internet di động tại Việt
-      Nam.
+      Viettel là tập đoàn viễn thông hàng đầu Việt Nam, trực thuộc Bộ Quốc phòng, chuyên cung cấp các dịch vụ di động, Internet băng rộng, truyền hình số và giải pháp công nghệ cho doanh nghiệp. Với hơn 20 năm phát triển, Viettel không chỉ xây dựng mạng lưới viễn thông mạnh mẽ trong nước mà còn mở rộng hoạt động ra nhiều quốc gia trên thế giới. Tập đoàn luôn tiên phong trong việc triển khai các công nghệ mới như 4G, 5G, IoT và chuyển đổi số, góp phần nâng cao chất lượng dịch vụ và trải nghiệm khách hàng. Bên cạnh đó, Viettel còn phát triển các sản phẩm tiện ích như MyViettel, ViettelPay và ViettelTV, đáp ứng nhu cầu đa dạng của người dùng hiện đại. Nhờ chiến lược phát triển bền vững và đổi mới sáng tạo, Viettel đã khẳng định vị thế là thương hiệu uy tín, không chỉ trong lĩnh vực viễn thông mà còn trong công nghệ toàn cầu.
     </p>
   </div>
 </section>
@@ -322,62 +244,59 @@ Trên đây là một số gói cước 4G Viettel tiêu biểu, được thiế
         </h3>
       </section>
 
-      <section
-  class="bg-white rounded-2xl shadow p-10 grid md:grid-cols-2 gap-12"
->
-  <!-- LEFT -->
-  <div>
-    <h2 class="text-3xl font-bold mb-6">
-      Thông tin liên hệ & hỗ trợ Viettel
-    </h2>
+      <section class="bg-gray-50 py-16 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+    <!-- LEFT -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-4xl font-extrabold mb-6 text-gray-800">
+        Liên hệ & Hỗ trợ Viettel
+      </h2>
 
-    <p class="mb-4">
-      Viettel luôn sẵn sàng hỗ trợ khách hàng trong quá trình đăng ký và sử dụng
-      các dịch vụ <b>3G / 4G / 5G / Internet</b> trên toàn quốc.
-    </p>
+      <p class="mb-4 text-gray-700 leading-relaxed">
+        Viettel luôn sẵn sàng hỗ trợ khách hàng trong quá trình đăng ký và sử dụng
+        các dịch vụ <b>3G / 4G / 5G / Internet</b> trên toàn quốc.
+      </p>
 
-    <p class="mb-4">
-      Đội ngũ chăm sóc khách hàng hoạt động <b>24/7</b>, hỗ trợ nhanh chóng qua
-      nhiều kênh như tổng đài, cửa hàng giao dịch và nền tảng trực tuyến.
-    </p>
+      <p class="mb-4 text-gray-700 leading-relaxed">
+        Đội ngũ chăm sóc khách hàng hoạt động <b>24/7</b>, hỗ trợ nhanh chóng qua
+        nhiều kênh như tổng đài, cửa hàng giao dịch và nền tảng trực tuyến.
+      </p>
 
-    <p class="text-gray-600">
-      Nếu bạn cần tư vấn gói cước, xử lý sự cố hay giải đáp thắc mắc, hãy liên hệ
-      Viettel theo các thông tin bên cạnh.
-    </p>
-  </div>
-
-  <!-- RIGHT -->
-  <div class="grid gap-6">
-    <div class="p-6 bg-gray-50 rounded-xl border">
-      📞 <b>Tổng đài CSKH 24/7</b><br />
-      <span class="text-gray-600 text-sm">
-        198 (miễn phí) hoặc 1800 8098
-      </span>
+      <p class="text-gray-500">
+        Nếu bạn cần tư vấn gói cước, xử lý sự cố hay giải đáp thắc mắc, hãy liên hệ
+        Viettel theo các thông tin bên cạnh.
+      </p>
     </div>
 
-    <div class="p-6 bg-gray-50 rounded-xl border">
-      📧 <b>Email hỗ trợ</b><br />
-      <span class="text-gray-600 text-sm">
-        cskh@viettel.com.vn
-      </span>
-    </div>
+    <!-- RIGHT -->
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-start gap-2 border border-gray-200">
+        <div class="text-3xl">📞</div>
+        <b class="text-lg text-gray-800">Tổng đài CSKH 24/7</b>
+        <span class="text-gray-500 text-sm">198 (miễn phí) hoặc 1800 8098</span>
+      </div>
 
-    <div class="p-6 bg-gray-50 rounded-xl border">
-      📍 <b>Trụ sở chính</b><br />
-      <span class="text-gray-600 text-sm">
-        Lô D26, KĐT mới Cầu Giấy, Quận Cầu Giấy, Hà Nội
-      </span>
-    </div>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-start gap-2 border border-gray-200">
+        <div class="text-3xl">📧</div>
+        <b class="text-lg text-gray-800">Email hỗ trợ</b>
+        <span class="text-gray-500 text-sm">cskh@viettel.com.vn</span>
+      </div>
 
-    <div class="p-6 bg-gray-50 rounded-xl border">
-      🏢 <b>Chi nhánh TP. Hồ Chí Minh</b><br />
-      <span class="text-gray-600 text-sm">
-        285 Cách Mạng Tháng Tám, Quận 10, TP.HCM
-      </span>
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-start gap-2 border border-gray-200">
+        <div class="text-3xl">📍</div>
+        <b class="text-lg text-gray-800">Trụ sở chính</b>
+        <span class="text-gray-500 text-sm">Lô D26, KĐT mới Cầu Giấy, Quận Cầu Giấy, Hà Nội</span>
+      </div>
+
+      <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition flex flex-col items-start gap-2 border border-gray-200">
+        <div class="text-3xl">🏢</div>
+        <b class="text-lg text-gray-800">Chi nhánh TP. Hồ Chí Minh</b>
+        <span class="text-gray-500 text-sm">285 Cách Mạng Tháng 8, Quận 10, TP.HCM</span>
+      </div>
     </div>
   </div>
 </section>
+
 
     </main>
 

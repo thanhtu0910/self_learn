@@ -14,7 +14,7 @@
           <h1 class="text-3xl font-bold text-center flex-1">
             Đăng ký gói cước 3G / 4G / 5G Viettel
           </h1>
-          <a href="support.html" class="flex items-center gap-2 ml-4 hover:bg-red-700 px-3 py-2 rounded transition">
+          <a href="ho-tro.html" class="flex items-center gap-2 ml-4 hover:bg-red-700 px-3 py-2 rounded transition">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
             </svg>
@@ -32,37 +32,58 @@
         </div>
       </div>
     </section> -->
-    <section class="relative w-full">
-  <!-- Background image -->
-  <img
-    src="https://media.vietteltelecom.vn/upload/ckfinder/images/5G_BANNER_549x335.png"
-    alt="5G Viettel"
-    class="w-full h-[260px] md:h-[380px] object-cover"
-  />
+    <section id="goi-ngay" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-red-700/70"></div>
-
-  <!-- Content -->
-  <div
-    class="absolute inset-0 flex items-center justify-center text-center px-6"
-  >
-    <div class="text-white max-w-3xl">
-      <h2 class="text-2xl md:text-4xl font-bold mb-4">
-        Trải nghiệm Internet 5G Viettel
-      </h2>
-      <p class="text-sm md:text-lg mb-6">
-        Tốc độ cao – Dung lượng lớn – Giá cực tốt cho mọi nhu cầu
+    <!-- LEFT -->
+    <div>
+      <h2 class="text-3xl font-bold text-red-600">Gói Ngày Viettel</h2>
+      <p class="text-gray-600 text-lg mt-2">
+        Phí chỉ <strong>3.000đ/ngày</strong>
       </p>
+
+      <p class="text-xl mt-4">
+        <strong>Soạn:</strong>
+        <span class="text-4xl text-red-600 font-bold">DK</span>
+        gửi
+        <span class="text-4xl text-red-600 font-bold">9326</span>
+      </p>
+
+      <ul class="mt-6 space-y-3 text-lg">
+        <li class="flex items-start">
+          <span class="text-red-600 mr-2">✔</span>
+          Dung lượng tốc độ cao <strong>KHÔNG GIỚI HẠN</strong>
+        </li>
+        <li class="flex items-start">
+          <span class="text-red-600 mr-2">✔</span>
+          Lướt Web, Facebook, YouTube, TikTok thoải mái
+        </li>
+        <li class="flex items-start">
+          <span class="text-red-600 mr-2">✔</span>
+          Áp dụng cho mọi thuê bao Viettel
+        </li>
+      </ul>
+
       <a
-        href="#"
-        class="inline-block bg-white text-red-600 font-semibold px-8 py-3 rounded-lg shadow hover:bg-gray-100 transition"
+        onclick="smsbutton('9326','DK')"
+        class="inline-block mt-8 bg-red-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-red-700 transition"
       >
-        Xem gói cước
+        Đăng ký ngay
       </a>
     </div>
+
+    <!-- RIGHT (ảnh / minh hoạ) -->
+    <div class="flex justify-center">
+      <img
+        src="https://dangkyviettel.com.vn/public/upload/images/5G-Viettel-tai-ho-chi-minh.png"
+        class="rounded-2xl shadow-lg max-w-full"
+        alt="5G Viettel"
+      />
+    </div>
+
   </div>
 </section>
+
 
     <main class="max-w-7xl mx-auto px-6 py-14 space-y-20">
       <!-- GRID GÓI THÁNG -->
@@ -79,8 +100,7 @@
             <div class="text-lg text-red-600 font-semibold mb-4">3.000đ / ngày</div>
             <ul class="text-gray-700 space-y-2 mb-6">
               <li>• Soạn: <span class="font-medium">DK4</span> gửi <span class="font-medium">9636</span></li>
-              <li>• Thoải mái data cho social, video</li>
-              <li>• Phù hợp dùng trong ngày</li>
+              <li>• Thoải mái data chơi Game, xem Facebook, TikTok, Youtube...</li>
             </ul>
             <div class="bg-gray-50 p-4 rounded mb-6 border">
               <div class="text-sm text-gray-600">Mở ứng dụng nhắn tin và gửi mã hoặc nhấn nút đăng ký.</div>
@@ -93,8 +113,9 @@
             <div class="bg-white rounded-xl p-6 shadow flex items-center justify-between">
               <div>
                 <h4 class="font-bold text-red-600">SD90</h4>
-                <div class="text-sm text-gray-700">90.000đ / 30 ngày — 1.5GB/ngày</div>
-                <div class="text-sm text-gray-500">Soạn: SD90 ON1 gửi 290</div>
+                <div class="text-sm text-gray-700">90.000đ / 30 ngày </div>
+                <div>• Soạn: SD90 ON1 gửi 290</div>
+                <div>• 1.5GB data 3G/4G tốc độ cao mỗi ngày</div>
               </div>
               <button onclick="smsbutton('290','SD90 ON1')" class="bg-red-500 hover:bg-red-600 text-white py-2 px-5 rounded-lg font-semibold">Đăng ký</button>
             </div>
@@ -102,8 +123,10 @@
             <div class="bg-white rounded-xl p-6 shadow flex items-center justify-between">
               <div>
                 <h4 class="font-bold text-red-600">MXH100</h4>
-                <div class="text-sm text-gray-700">100.000đ / 30 ngày — 1GB/ngày + social</div>
-                <div class="text-sm text-gray-500">Soạn: MXH100 ON1 gửi 290</div>
+                <div class="text-sm text-gray-700">100.000đ / 30 ngày </div>
+                <div>• Soạn: MXH100 ON1 gửi 290</div>
+                <div>• 1GB data 3G/4G mỗi ngày</div>
+                <div>• Miễn phí DATA truy cập TikTok, YouTube, Facebook</div>
               </div>
               <button onclick="smsbutton('290','MXH100 ON1')" class="bg-red-500 hover:bg-red-600 text-white py-2 px-5 rounded-lg font-semibold">Đăng ký</button>
             </div>
@@ -111,10 +134,22 @@
             <div class="bg-white rounded-xl p-6 shadow flex items-center justify-between border-2 border-red-100">
               <div>
                 <h4 class="font-bold text-red-700">SD135</h4>
-                <div class="text-sm text-gray-700">135.000đ / 30 ngày — 5GB/ngày</div>
-                <div class="text-sm text-gray-500">Soạn: SD135 ON1 gửi 290</div>
+                <div class="text-sm text-gray-700">135.000đ / 30 ngày </div>
+                <div>• Soạn: SD135 ON1 gửi 290</div>
+                <div>• 5GB data 3G/4G tốc độ cao mỗi ngày</div>
               </div>
               <button onclick="smsbutton('290','SD135 ON1')" class="bg-red-500 hover:bg-red-600 text-white py-2 px-5 rounded-lg font-semibold">Đăng ký</button>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow flex items-center justify-between border-2 border-red-100">
+              <div>
+                <h4 class="font-bold text-red-700">5G230B</h4>
+                <div class="text-sm text-gray-700">230.000đ/30 ngày</div>
+                <div>• Soạn: 5G230B ON1 gửi 290</div>
+                <div>• 8GB/ngày</div>
+                <div>• Miễn phí nội mạng dưới 20 phút + 150 phút ngoại mạng</div>
+              </div>
+              <button onclick="smsbutton('290','5G230B ON1')" class="bg-red-500 hover:bg-red-600 text-white py-2 px-5 rounded-lg font-semibold">Đăng ký</button>
             </div>
           </div>
         </div>
@@ -127,7 +162,7 @@
             <ul class="text-sm space-y-2 mb-6">
               <li>• Soạn: DK gửi 9326</li>
               <li>• 3G/4G tốc độ cao KHÔNG GIỚI HẠN</li>
-              <li>• Lướt web, Facebook, Youtube</li>
+              <li>• Lướt web, Facebook, Youtube, TikTok thoải mái</li>
             </ul>
             <button onclick="smsbutton('9326','DK')" class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">Đăng ký</button>
           </div>
@@ -158,6 +193,7 @@
             <ul class="text-sm space-y-2 mb-6">
               <li>• Soạn: V160B ON1 gửi 290</li>
               <li>• 4GB/ngày + miễn phí gọi nội & ngoại mạng</li>
+              <li>• Miễn phí nội mạng dưới 10 phút + 100 phút ngoại mạng</li>
             </ul>
             <button onclick="smsbutton('290','V160B ON1')" class="w-full mt-auto bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">Đăng ký</button>
           </div>
@@ -301,52 +337,41 @@ Trên đây là một số gói cước 4G Viettel tiêu biểu, được thiế
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white p-4">
-      <div class="max-w-7xl mx-auto px-6 py-10 border-t">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Trang chủ -->
+    <footer class="bg-gray-800 text-white mt-20">
+      <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 class="font-bold text-black mb-4">Trang chủ</h3>
-            <ul class="space-y-2 text-gray-600 list-disc list-inside">
-              <li>Về chúng tôi</li>
-              <li>Kênh @dicainaykhong</li>
-              <li>Tuyển dụng</li>
-              <li>Liên hệ</li>
+            <h4 class="font-bold mb-4">Về Viettel</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-red-600">Giới thiệu</a></li>
+              <li><a href="#" class="hover:text-red-600">Tin tức</a></li>
+              <li><a href="#" class="hover:text-red-600">Sự kiện</a></li>
             </ul>
           </div>
-
-          <!-- Tin tức & Ưu đãi -->
           <div>
-            <h3 class="font-bold text-black mb-4">Gói cước tiêu biểu</h3>
-            <ul class="space-y-2 text-gray-600 list-disc list-inside">
-              <li>SIM Siêu Data</li>
-              <li>SIM Số Đẹp</li>
+            <h4 class="font-bold mb-4">Sản phẩm</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-red-600">Gói 3G/4G/5G</a></li>
+              <li><a href="#" class="hover:text-red-600">Roaming quốc tế</a></li>
+              <li><a href="#" class="hover:text-red-600">Dịch vụ khác</a></li>
             </ul>
           </div>
-
-          <!-- Hỗ trợ -->
           <div>
-            <h3 class="font-bold text-black mb-4">Hỗ trợ</h3>
-            <ul class="space-y-2 text-gray-600 list-disc list-inside">
-              <li>Hướng dẫn</li>
-              <li>Câu hỏi thường gặp</li>
-              <li>Cơ hội kinh doanh</li>
-              <li>Phản hồi góp ý</li>
+            <h4 class="font-bold mb-4">Hỗ trợ</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="support.html" class="hover:text-red-600">Liên hệ</a></li>
+              <li><a href="#" class="hover:text-red-600">FAQ</a></li>
+              <li><a href="#" class="hover:text-red-600">Hướng dẫn</a></li>
             </ul>
           </div>
-
-          <!-- Chính sách & Điều khoản -->
           <div>
-            <h3 class="font-bold text-black mb-4">
-              Chính sách &amp; Điều khoản
-            </h3>
-            <ul class="space-y-2 text-gray-600 list-disc list-inside">
-              <li>Điều khoản sử dụng</li>
-              <li>Chính sách giá gói</li>
-              <li>Công khai thông tin</li>
-              <li>Quy định bảo vệ dữ liệu</li>
-            </ul>
+            <h4 class="font-bold mb-4">Liên hệ</h4>
+            <p class="text-sm">Hotline: 1800.9696</p>
+            <p class="text-sm">Email: support@viettel.com.vn</p>
           </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+          <p>&copy; 2024 Viettel. Bản quyền tất cả các quyền được bảo lưu.</p>
         </div>
       </div>
     </footer>

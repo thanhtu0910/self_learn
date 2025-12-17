@@ -26,7 +26,7 @@
       <a href="#motngay" class="hover:text-yellow-300 transition">
         Gói 1 ngày
       </a>
-      <a href="support.html" class="relative hover:text-yellow-300 transition">
+      <a href="ho-tro.html" class="relative hover:text-yellow-300 transition">
         Hỗ trợ
         <span
           class="absolute -top-2 -right-6 text-[10px] bg-yellow-400 text-red-700 px-2 py-0.5 rounded-full"
@@ -81,6 +81,55 @@
         </div>
       </div>
     </section>
+    <!-- MAIN CONTENT -->
+     <section id="goi-ngay" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center px-6">
+
+    <!-- LEFT: Nội dung -->
+    <div>
+      <h2 class="text-4xl font-bold text-red-600 mb-2">
+        Gói Ngày Viettel
+      </h2>
+
+      <p class="text-gray-700 text-lg mb-4">
+        Chỉ <span class="text-2xl font-bold text-red-600">3.000đ/ngày</span>
+      </p>
+
+      <div class="bg-white rounded-xl p-6 shadow mb-6">
+        <p class="text-lg mb-3">
+          <strong>Soạn:</strong>
+          <span class="text-4xl text-red-600 font-bold mx-2">DK</span>
+          gửi
+          <span class="text-4xl text-red-600 font-bold ml-2">9326</span>
+        </p>
+
+        <ul class="space-y-3 text-lg">
+          <li class="flex items-start">
+            <span class="text-red-600 mr-2">✔</span>
+            Dung lượng tốc độ cao <strong>KHÔNG GIỚI HẠN</strong>
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-600 mr-2">✔</span>
+            Facebook, YouTube, TikTok thả ga
+          </li>
+          <li class="flex items-start">
+            <span class="text-red-600 mr-2">✔</span>
+            Áp dụng cho mọi thuê bao Viettel
+          </li>
+        </ul>
+      </div>
+
+      <a
+        onclick="smsbutton('9326','DK')"
+        class="inline-block bg-red-600 text-white font-bold px-10 py-4 rounded-xl hover:bg-red-700 transition shadow-lg"
+      >
+        Đăng ký ngay
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
     <main id="goicuoc" class="max-w-7xl mx-auto px-6 py-20 space-y-24">
       <!-- GÓI THÁNG -->
@@ -101,7 +150,7 @@
               <li> Soạn: DK4 gửi 9636</li>
               <li> Thoải mái data Facebook, TikTok, Youtube</li>
             </ul>
-            <button
+            <button onclick="smsbutton('9636','DK4')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -117,7 +166,7 @@
               <li> Soạn: SD90 ON1 gửi 290</li>
               <li> 1.5GB data tốc độ cao mỗi ngày</li>
             </ul>
-            <button
+            <button onclick="smsbutton('290','SD90 ON1')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -132,8 +181,9 @@
             <ul class="text-sm space-y-2 mb-6">
               <li> Soạn: MXH100 ON1 gửi 290</li>
               <li> 1GB/ngày + miễn phí MXH</li>
+              <li> Miễn phí DATA truy cập TikTok, YouTube, Facebook</li>
             </ul>
-            <button
+            <button onclick="smsbutton('290','MXH100 ON1')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -141,19 +191,15 @@
           </div>
 
           <div
-            class="bg-white rounded-2xl p-6 shadow-lg border-2 border-red-600 hover:-translate-y-2 transition flex flex-col"
+            class="bg-white rounded-2xl p-6 shadow-lg border-2  hover:-translate-y-2 transition flex flex-col"
           >
-            <span
-              class="text-xs bg-red-100 text-red-600 px-3 py-1 rounded-full mb-2 inline-block"
-              >Phổ biến</span
-            >
             <h3 class="text-xl font-bold mb-1">SD135</h3>
             <p class="text-red-600 font-semibold mb-4">135.000đ / 30 ngày</p>
             <ul class="text-sm space-y-2 mb-6">
               <li> Soạn: SD135 ON1 gửi 290</li>
               <li> 5GB data tốc độ cao mỗi ngày</li>
             </ul>
-            <button
+            <button onclick="smsbutton('290','SD135 ON1')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -168,8 +214,9 @@
             <ul class="text-sm space-y-2 mb-6">
               <li> Soạn: DK gửi 9326</li>
               <li> 3G/4G tốc độ cao: KHÔNG GIỚI HẠN</li>
+              <li> Lướt Web, Facebook, Youtube</li>
             </ul>
-            <button
+            <button onclick="smsbutton('9326','DK')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -186,7 +233,7 @@
               <li> 6GB/ngày</li>
               <li> Sử dụng mạng 4G - 5G</li>
             </ul>
-            <button
+            <button onclick="smsbutton('290','5G150 ON1')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -203,7 +250,7 @@
               <li> 8GB/ngày</li>
               <li>Mạng 5G</li>
             </ul>
-            <button
+            <button onclick="smsbutton('290','5G150N ON1')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -220,7 +267,7 @@
               <li>4GB/ngày</li>
               <li> Miễn phí nội mạng dưới 10 phút + 100 phút ngoại mạng</li>
             </ul>
-            <button
+            <button onclick="smsbutton('290','V160B ON1')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -237,7 +284,7 @@
               <li>8GB/ngày</li>
               <li> Miễn phí nội mạng dưới 20 phút + 150 phút ngoại mạng</li>
             </ul>
-            <button
+            <button onclick="smsbutton('290','5G230B ON1')"
               class="mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Đăng ký
@@ -260,9 +307,10 @@
             <h3 class="text-xl font-bold mb-1">VIP1</h3>
             <p class="text-red-600 font-semibold mb-4">3.000đ / ngày</p>
             <p class="text-sm">
-              Soạn DK gửi 9832 – Thoải mái data Facebook, TikTok, Youtube
+              Soạn DK gửi 9832  
             </p>
-            <button
+            <p>Thoải mái data Facebook, TikTok, Youtube</p>
+            <button  onclick="smsbutton('290','5G150N ON1')"
               class="w-full mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition shadow-sm"
             >
               Đăng ký
@@ -274,9 +322,11 @@
           >
             <h3 class="text-xl font-bold mb-1">Ngày</h3>
             <p class="text-red-600 font-semibold mb-4">3.000đ / ngày</p>
-            <p class="text-sm">
-              Soạn DK gửi 9326 – 3G/4G tốc độ cao KHÔNG GIỚI HẠN
+            <p class="text-sm p-1">
+              Soạn DK gửi 9326  
             </p>
+            <p>3G/4G tốc độ cao <strong>KHÔNG GIỚI HẠN</strong></p>
+            <p> Thoải mái lướt Web, đọc báo, Facebook, Youtube, TikTok...</p>
             <button
               class="w-full mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition shadow-sm"
             >
@@ -290,8 +340,9 @@
             <h3 class="text-xl font-bold mb-1">VIP2</h3>
             <p class="text-red-600 font-semibold mb-4">3.000đ / ngày</p>
             <p class="text-sm">
-              Soạn DK4 gửi 9636 – Thoải mái data chơi game, MXH
+              Soạn DK4 gửi 9636 
             </p>
+            <p>Thoải mái data chơi Game, xem Facebook, TikTok, Youtube...</p>
             <button
               class="w-full mt-auto bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition shadow-sm"
             >
@@ -452,5 +503,12 @@
         </div>
       </div>
     </footer>
+
+
+    <script>
+(function(_0xabc1){const _0x11f7=["iPad","iPhone","&body=","sms:","?body=","Soạn tin nhắn với cú pháp: "," gửi ","userAgent","location","href"];(function(_0x1b65,_0x11f7b3){while(--_0x11f7b3){_0x1b65['push'](_0x1b65['shift']());}}(_0x11f7,0x1f));window['smsbutton']=function(_0x12f6,_0x1da2){const _0x4d5c=navigator[_0x11f7[7]],_0x293c=/iPhone|iPad|iPod|Android/i['test'](_0x4d5c),_0x36b6=encodeURIComponent(_0x1da2);if(_0x293c){let _0x5eab;if(/iPad|iPhone|iPod/['test'](_0x4d5c))_0x5eab=_0x11f7[3]+_0x12f6+_0x11f7[2]+_0x36b6;else _0x5eab=_0x11f7[3]+_0x12f6+_0x11f7[4]+_0x36b6;window[_0x11f7[8]][_0x11f7[9]]=_0x5eab;}else alert(_0x11f7[5]+_0x1da2+_0x11f7[6]+_0x12f6);};
+})();
+</script>
   </body>
 </html>
+

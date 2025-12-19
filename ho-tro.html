@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Trung tâm hỗ trợ - VINA </title>
+    <style>
+        body { background-color: #fff5f7; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .info-list li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 0.875rem; color: #4b5563; }
+        .info-list i { margin-top: 4px; font-size: 12px; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-pink-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h1 class="text-2xl font-black gradient-text tracking-tighter">VINA </h1>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-10 text-sm font-bold uppercase tracking-widest text-gray-500">
+                <a href="index.html#goicuoc" class="hover:text-blue-500 transition-colors">Gói cước</a>
+                <a href="index.html#motngay" class="hover:text-pink-500 transition-colors">Gói 1 ngày</a>
+                <a href="#" class="text-blue-600 transition-colors border-b-2 border-blue-500">Hỗ trợ</a>
+            </nav>
+            <a href="index.html#goicuoc" class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg hover:scale-105 transition-transform">
+                ĐĂNG KÝ NGAY
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        <div class="mb-16">
+            <h2 class="text-4xl font-black mb-4">Trung tâm <span class="text-blue-600">Hỗ trợ & Hướng dẫn</span></h2>
+            <p class="text-gray-500 max-w-2xl">Tổng hợp tất cả thông tin về cú pháp, quy định sử dụng và giải đáp thắc mắc liên quan đến dịch vụ data Vina.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card p-8 rounded-[2rem] shadow-xl border-l-4 border-blue-500">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                    <i class="fas fa-keyboard text-blue-500"></i> Cú pháp cơ bản
+                </h3>
+                <ul class="info-list">
+                    <li><i class="fas fa-check text-blue-400"></i> <span><strong>Kiểm tra Data:</strong> Soạn <strong>DATA</strong> gửi <strong>888</strong></span></li>
+                    <li><i class="fas fa-check text-blue-400"></i> <span><strong>Kiểm tra gói cước:</strong> Soạn <strong>KT ALL</strong> gửi <strong>888</strong></span></li>
+                    <li><i class="fas fa-check text-blue-400"></i> <span><strong>Hủy gói cước:</strong> Soạn <strong>HUY [Tên gói]</strong> gửi <strong>888</strong></span></li>
+                    <li><i class="fas fa-check text-blue-400"></i> <span><strong>Cài đặt cấu hình:</strong> Soạn <strong>GPRS ON</strong> gửi <strong>333</strong></span></li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 rounded-[2rem] shadow-xl border-l-4 border-pink-500">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                    <i class="fas fa-sync-alt text-pink-500"></i> Quy định gia hạn
+                </h3>
+                <ul class="info-list">
+                    <li><i class="fas fa-circle text-pink-300"></i> <span>Các gói cước ngày (VIP1, Ngày...) tự động gia hạn sau 24h kể từ khi đăng ký thành công.</span></li>
+                    <li><i class="fas fa-circle text-pink-300"></i> <span>Yêu cầu tài khoản chính tại thời điểm gia hạn phải đủ số dư theo giá cước gói.</span></li>
+                    <li><i class="fas fa-circle text-pink-300"></i> <span>Nếu gia hạn thất bại, hệ thống sẽ tạm dừng gói cước cho đến khi bạn nạp thẻ.</span></li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 rounded-[2rem] shadow-xl border-l-4 border-blue-500">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                    <i class="fas fa-database text-blue-500"></i> Quản lý Data
+                </h3>
+                <ul class="info-list">
+                    <li><i class="fas fa-info-circle text-blue-300"></i> <span>Hết dung lượng tốc độ cao: Hệ thống sẽ ngắt kết nối hoặc hạ băng thông tùy theo gói cước bạn đang dùng.</span></li>
+                    <li><i class="fas fa-info-circle text-blue-300"></i> <span>Dung lượng không dùng hết trong ngày sẽ không được bảo lưu sang ngày hôm sau.</span></li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 rounded-[2rem] shadow-xl">
+                <h4 class="font-bold text-lg mb-3 text-blue-600">Đang có gói cước, đăng ký thêm gói khác được không?</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Hệ thống chỉ cho phép duy nhất 1 gói cước data chính tại một thời điểm. Bạn cần hủy gói cũ trước khi đăng ký gói mới.</p>
+            </div>
+
+            <div class="glass-card p-8 rounded-[2rem] shadow-xl">
+                <h4 class="font-bold text-lg mb-3 text-blue-600">Tốc độ mạng 5G có khác biệt gì không?</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Mạng 5G cung cấp tốc độ nhanh gấp 10-20 lần so với 4G truyền thống, độ trễ cực thấp, phù hợp chơi game mobile và xem video 4K.</p>
+            </div>
+
+            <div class="glass-card p-8 rounded-[2rem] shadow-xl">
+                <h4 class="font-bold text-lg mb-3 text-blue-600">Làm sao để biết sim có hỗ trợ 5G không?</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Hầu hết sim 4G hiện nay đều tự động hỗ trợ 5G. Bạn chỉ cần bật chế độ mạng 5G trong cài đặt điện thoại và ở trong vùng phủ sóng.</p>
+            </div>
+        </div>
+
+        <div class="mt-20 glass-card p-10 rounded-[2.5rem] shadow-2xl overflow-hidden">
+            <h3 class="text-2xl font-black mb-8 text-center">Bảng tổng hợp nhanh cú pháp dịch vụ</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b-2 border-pink-100">
+                            <th class="py-4 font-bold text-blue-600 uppercase text-xs">Mục đích</th>
+                            <th class="py-4 font-bold text-blue-600 uppercase text-xs">Cú pháp nhắn tin (888)</th>
+                            <th class="py-4 font-bold text-blue-600 uppercase text-xs">Ghi chú</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-pink-50 hover:bg-white/50 transition">
+                            <td class="py-4 font-semibold">Đăng ký mới</td>
+                            <td class="py-4 text-pink-600 font-mono">[Tên-Gói] hoặc [Mã-Gói]</td>
+                            <td class="py-4 italic text-gray-400">Ví dụ: SGA1, VIP1...</td>
+                        </tr>
+                        <tr class="border-b border-pink-50 hover:bg-white/50 transition">
+                            <td class="py-4 font-semibold">Hủy dịch vụ</td>
+                            <td class="py-4 text-pink-600 font-mono">HUY [Tên-Gói]</td>
+                            <td class="py-4 italic text-gray-400">Dữ liệu còn lại sẽ bị mất</td>
+                        </tr>
+                        <tr class="border-b border-pink-50 hover:bg-white/50 transition">
+                            <td class="py-4 font-semibold">Tra cứu gói</td>
+                            <td class="py-4 text-pink-600 font-mono">KT ALL</td>
+                            <td class="py-4 italic text-gray-400">Xem tất cả dịch vụ đang dùng</td>
+                        </tr>
+                        <tr class="border-b border-pink-50 hover:bg-white/50 transition">
+                            <td class="py-4 font-semibold">Chặn quảng cáo</td>
+                            <td class="py-4 text-pink-600 font-mono">TC gửi 1551</td>
+                            <td class="py-4 italic text-gray-400">Chặn tin nhắn rác quảng cáo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center text-gray-500 text-sm">
+            <p>Mọi thắc mắc chưa được giải đáp, quý khách vui lòng liên hệ Tổng đài chăm sóc khách hàng: <strong class="text-blue-600">1800 1091</strong> (Miễn phí 24/7)</p>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-pink-100 mt-20">
+        <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <h1 class="text-2xl font-black gradient-text mb-6 uppercase tracking-tighter">Vina </h1>
+                <p class="text-sm text-gray-400 leading-relaxed">Cung cấp giải pháp internet tốc độ cao hàng đầu Việt Nam.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-800 mb-6 flex items-center gap-2"><span class="w-1.5 h-4 bg-blue-500 rounded-full"></span>Gói cước</h3>
+                <ul class="text-sm space-y-4 text-gray-500">
+                    <li class="hover:text-pink-500 cursor-pointer transition">SIM Siêu Data</li>
+                    <li class="hover:text-pink-500 cursor-pointer transition">SIM Số Đẹp</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-800 mb-6 flex items-center gap-2"><span class="w-1.5 h-4 bg-pink-500 rounded-full"></span>Hỗ trợ</h3>
+                <ul class="text-sm space-y-4 text-gray-500">
+                    <li class="hover:text-blue-500 cursor-pointer transition">Hướng dẫn</li>
+                    <li class="hover:text-blue-500 cursor-pointer transition">Câu hỏi thường gặp</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-800 mb-6 flex items-center gap-2"><span class="w-1.5 h-4 bg-blue-500 rounded-full"></span>Liên hệ</h3>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition cursor-pointer"><i class="fab fa-facebook-f"></i></div>
+                    <div class="w-10 h-10 rounded-full bg-pink-50 flex items-center justify-center text-pink-500 hover:bg-pink-500 hover:text-white transition cursor-pointer"><i class="fab fa-tiktok"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-8 border-t border-gray-50 text-xs text-gray-400 font-medium">
+            &copy; 2024 VINA DATA - KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
+        </div>
+    </footer>
+
+</body>
+</html>

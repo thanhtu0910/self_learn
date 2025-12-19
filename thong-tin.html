@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Thông Tin - VINA </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bento-card { border: 1px solid rgba(0,0,0,0.05); }
+        .text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="flex flex-col h-full text-slate-900 bg-slate-50/30">
+    <div class="flex-grow">
+        <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-slate-100">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-pink-500 rounded-xl flex items-center justify-center text-white shadow-lg rotate-3"><i class="fas fa-bolt"></i></div>
+                    <h1 class="text-2xl font-extrabold tracking-tighter text-blue-600">VINA</h1>
+                </div>
+                <nav class="hidden md:flex items-center gap-10 text-xs font-bold uppercase tracking-widest text-slate-500">
+                    <a href="index.html#daily" class="hover:text-blue-600 transition">Gói cước</a>
+                    <a href="index.html#monthly" class="hover:text-pink-500 transition">Gói tháng</a>
+                    <a href="ho-tro.html" class="hover:text-blue-600 transition">Hỗ trợ</a>
+                    <a href="tin-tuc.html" class="text-blue-600">Tin tức</a>
+                    <a href="ho-tro.html" class="text-blue-600">Hỗ trợ</a>
+                    <a href="thong-tin.html" class="text-blue-600">Thông tin</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-6 py-16 space-y-24">
+
+    <!-- GIỚI THIỆU -->
+    <section>
+        <h2 class="text-4xl font-extrabold mb-12 text-center italic">
+            Về <span class="text-blue-400">Chúng Tôi</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bento-card bg-white p-8 rounded-[2.5rem] md:col-span-2">
+                <h3 class="text-xl font-bold mb-4 italic text-blue-600">Hạ tầng mạng 5G</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    Hệ thống mạng 5G VINA được triển khai trên băng tần hiện đại, phủ sóng rộng khắp
+                    các khu vực đô thị và nông thôn, đảm bảo tốc độ cao và độ trễ thấp cho mọi nhu cầu
+                    truy cập Internet.
+                </p>
+            </div>
+
+            <div class="bento-card bg-pink-50 p-8 rounded-[2.5rem]">
+                <h3 class="text-xl font-bold mb-4 italic text-pink-600">Cam kết</h3>
+                <p class="text-sm text-slate-500 italic">
+                    Độ khả dụng mạng lưới đạt 99.9%, hỗ trợ khách hàng 24/7 và liên tục nâng cấp
+                    chất lượng dịch vụ.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIN TỨC -->
+    <section>
+        <h2 class="text-4xl font-extrabold mb-12 text-center italic">
+            Tin <span class="text-blue-400">Mới Nhất</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Tin 1 -->
+            <article class="bento-card bg-white p-8 rounded-[2.5rem] hover:shadow-xl transition">
+                <span class="text-[10px] font-black uppercase tracking-widest text-blue-500 italic">
+                    Thông báo
+                </span>
+                <h3 class="mt-4 text-lg font-extrabold italic leading-snug">
+                    VINA chính thức nâng cấp băng thông 5G toàn quốc
+                </h3>
+                <p class="mt-4 text-sm text-slate-500 italic leading-relaxed">
+                    Từ tháng 12/2024, VINA triển khai nâng cấp hạ tầng giúp tăng tốc độ truy cập
+                    lên đến 30% cho tất cả các gói cước 4G/5G hiện hành.
+                </p>
+                <div class="mt-6 text-xs font-bold uppercase tracking-widest text-slate-400 italic">
+                    18.12.2024
+                </div>
+            </article>
+
+            <!-- Tin 2 -->
+            <article class="bento-card bg-white p-8 rounded-[2.5rem] hover:shadow-xl transition">
+                <span class="text-[10px] font-black uppercase tracking-widest text-pink-500 italic">
+                    Khuyến mãi
+                </span>
+                <h3 class="mt-4 text-lg font-extrabold italic leading-snug">
+                    Tặng thêm data cho khách hàng đăng ký mới
+                </h3>
+                <p class="mt-4 text-sm text-slate-500 italic leading-relaxed">
+                    Khách hàng đăng ký gói cước mới trong thời gian ưu đãi sẽ được cộng thêm
+                    dung lượng data sử dụng miễn phí trong 7 ngày đầu tiên.
+                </p>
+                <div class="mt-6 text-xs font-bold uppercase tracking-widest text-slate-400 italic">
+                    15.12.2024
+                </div>
+            </article>
+
+            <!-- Tin 3 -->
+            <article class="bento-card bg-white p-8 rounded-[2.5rem] hover:shadow-xl transition">
+                <span class="text-[10px] font-black uppercase tracking-widest text-blue-500 italic">
+                    Công nghệ
+                </span>
+                <h3 class="mt-4 text-lg font-extrabold italic leading-snug">
+                    5G và xu hướng Internet tốc độ cao năm 2025
+                </h3>
+                <p class="mt-4 text-sm text-slate-500 italic leading-relaxed">
+                    Công nghệ 5G tiếp tục đóng vai trò then chốt trong việc thúc đẩy chuyển đổi số,
+                    học tập trực tuyến và giải trí đa nền tảng tại Việt Nam.
+                </p>
+                <div class="mt-6 text-xs font-bold uppercase tracking-widest text-slate-400 italic">
+                    10.12.2024
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+
+    <footer class="bg-[#0b1120] text-white rounded-t-[4rem] pt-16 pb-8 shrink-0">
+        <div class="max-w-7xl mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <h1 class="text-2xl font-black mb-6 tracking-tighter italic uppercase">VINA </h1>
+                <p class="text-slate-400 text-xs italic leading-relaxed uppercase font-bold tracking-widest">Đại lý phân phối gói cước 4G/5G chính thức. Uy tín - Tốc độ - Bảo mật.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-blue-400 uppercase text-xs tracking-widest italic">SẢN PHẨM</h4>
+                <a href="index.html#daily" class="text-slate-400 hover:text-white transition text-xs font-bold uppercase italic tracking-tighter">Gói Ngày</a>
+                <a href="index.html#monthly" class="text-slate-400 hover:text-white transition text-xs font-bold uppercase italic tracking-tighter">Gói Tháng</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-pink-400 uppercase text-xs tracking-widest italic">Hỗ trợ</h4>
+                <a href="ho-tro.html" class="text-slate-400 hover:text-white transition text-xs font-bold uppercase italic tracking-tighter">Giải đáp lỗi</a>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-xs uppercase tracking-widest italic">Kết nối</h4>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:bg-blue-600 transition cursor-pointer"><i class="fab fa-facebook-f"></i></div>
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:bg-pink-500 transition cursor-pointer"><i class="fab fa-tiktok"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-slate-700 font-black uppercase tracking-[0.3em] italic pt-8 border-t border-white/5 mx-10">© 2024 VINA - KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Vina - Hệ Thống Gói Cước Mạng</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap");
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #ffffff;
+        background-image: radial-gradient(
+            at 0% 0%,
+            rgba(59, 130, 246, 0.05) 0,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 100% 100%,
+            rgba(236, 72, 153, 0.05) 0,
+            transparent 50%
+          );
+      }
+      .bento-card {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        position: relative;
+        z-index: 1;
+      }
+      .bento-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px -12px rgba(236, 72, 153, 0.15);
+      }
+      .logo-gradient {
+        background: linear-gradient(135deg, #3b82f6 0%, #ec4899 100%);
+      }
+      /* Tiêu đề thẳng không nghiêng để không mất góc chữ */
+      .text-header-main {
+        font-style: normal !important;
+        padding: 0 4px;
+      }
+      .card-header-fix {
+        position: relative;
+        z-index: 20;
+        background: transparent;
+        font-style: normal !important;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col h-full text-slate-900">
+    <div class="flex-grow">
+      <header
+        class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-slate-100"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+        >
+          <div class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 logo-gradient rounded-xl flex items-center justify-center text-white shadow-lg rotate-3"
+            >
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h1
+              class="text-2xl font-extrabold tracking-tighter text-blue-600 uppercase"
+            >
+              VINA
+            </h1>
+          </div>
+          <nav
+            class="hidden md:flex items-center gap-10 text-xs font-bold uppercase tracking-widest text-slate-500"
+          >
+            <a href="#daily" class="hover:text-blue-600 transition">Gói cước</a>
+            <a href="#monthly" class="hover:text-pink-500 transition"
+              >Gói tháng</a
+            >
+            <a href="ho-tro.html" class="hover:text-blue-600 transition"
+              >Hỗ trợ</a
+            >
+            <a href="tin-tuc.html" class="hover:text-blue-600 transition"
+              >Tin tức</a
+            >
+            <a href="thong-tin.html" class="hover:text-blue-600 transition"
+              >Thông tin</a
+            >
+          </nav>
+          <a
+            href="#daily"
+            class="bg-slate-900 text-white px-6 py-3 rounded-2xl text-xs font-black hover:bg-blue-600 transition shadow-xl uppercase tracking-widest"
+          >
+            Đăng ký ngay
+          </a>
+        </div>
+      </header>
+
+      <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 text-center">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-50 text-pink-600 text-[10px] font-black uppercase tracking-[0.2em] mb-8"
+        >
+          <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
+          Cập nhật ưu đãi 2025
+        </div>
+        <h2
+          class="text-3xl md:text-7xl font-extrabold mb-8 tracking-tighter leading-tight text-slate-900"
+        >
+          Gói cước Vina <br /><span class="text-blue-600 text-header-main"
+            >theo ngày</span
+          >
+        </h2>
+        <p
+          class="text-slate-400 text-lg max-w-2xl mx-auto font-medium leading-relaxed italic"
+        >
+          Đăng ký siêu tốc qua SMS. Cam kết data tốc độ cao, không giới hạn truy
+          cập cho các ứng dụng giải trí hàng đầu.
+        </p>
+      </section>
+
+      <section class="max-w-7xl mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div class="lg:col-span-8 space-y-20">
+            <div id="daily">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                  class="bento-card bg-white rounded-[2.5rem] p-8 flex flex-col border-2 border-pink-100 overflow-hidden"
+                >
+                  <h3
+                    class="card-header-fix text-2xl font-extrabold text-gray-800 mb-1"
+                  >
+                    Ngày
+                  </h3>
+                  <p class="text-pink-500 font-black text-xl mb-8 italic">
+                    5.000đ / ngày
+                  </p>
+                  <div
+                    class="space-y-4 mb-10 flex-grow text-sm text-slate-500 font-medium leading-relaxed"
+                  >
+                    <p
+                      class="bg-pink-50 p-3 rounded-2xl border border-pink-100 font-bold text-pink-700 text-center"
+                    >
+                      Soạn: SGA1 gửi 888
+                    </p>
+                    <p>
+                      <i class="fas fa-bolt text-blue-500 mr-2"></i>Ưu đãi: nhận
+                      0.3GB data
+                    </p>
+                    <p>
+                      <i class="fas fa-bolt text-blue-500 mr-2"></i
+                      ><strong>Thoải mái data</strong> chơi Game, xem FB,
+                      TikTok, Youtube...
+                    </p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','SGA1')"
+                    class="w-full bg-pink-500 text-white py-4 rounded-[1.5rem] font-bold shadow-lg hover:bg-pink-600 transition uppercase tracking-widest text-[10px]"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+
+                <div
+                  class="bento-card bg-slate-900 rounded-[2.5rem] p-8 flex flex-col text-white overflow-hidden"
+                >
+                  <div
+                    class="absolute top-4 right-6 bg-pink-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest z-10"
+                  >
+                    Hot
+                  </div>
+                  <h3 class="card-header-fix text-2xl font-extrabold mb-1">
+                    Tuần
+                  </h3>
+                  <p class="text-blue-400 font-black text-xl mb-8 italic">
+                    20.000đ / 7 ngày
+                  </p>
+                  <div
+                    class="space-y-4 mb-10 flex-grow text-sm text-slate-400 font-medium leading-relaxed"
+                  >
+                    <p
+                      class="bg-white/10 p-3 rounded-2xl border border-white/10 text-white font-bold text-center"
+                    >
+                      Soạn: SGA7 gửi 888
+                    </p>
+                    <p>
+                      <i class="fas fa-database text-blue-400 mr-2"></i>Ưu đãi:
+                      nhận 1GB data
+                    </p>
+                    <p>
+                      <i class="fas fa-globe text-pink-400 mr-2"></i
+                      ><strong>Thoải mái data</strong> chơi Game, FB, TikTok,
+                      Youtube...
+                    </p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','SGA7')"
+                    class="w-full bg-white text-slate-900 py-4 rounded-[1.5rem] font-bold hover:bg-blue-400 transition uppercase tracking-widest text-[10px]"
+                  >
+                    Đăng ký ngay
+                  </button>
+                </div>
+
+                <div
+                  class="bento-card bg-white rounded-[2.5rem] p-8 flex flex-col border border-slate-100 shadow-sm overflow-hidden"
+                >
+                  <h3
+                    class="card-header-fix text-2xl font-extrabold text-blue-600 mb-1"
+                  >
+                    VIP1
+                  </h3>
+                  <p class="text-slate-900 font-black text-xl mb-8 italic">
+                    5.000đ / ngày
+                  </p>
+                  <div
+                    class="space-y-4 mb-10 flex-grow text-sm text-slate-500 font-medium leading-relaxed"
+                  >
+                    <p
+                      class="bg-blue-50 p-3 rounded-2xl border border-blue-100 font-bold text-blue-700 text-center"
+                    >
+                      Soạn: ONG5A gửi 888
+                    </p>
+                    <p>
+                      <i class="fas fa-check-circle text-blue-500 mr-2"></i
+                      ><strong>Không giới hạn data</strong> chơi game, đọc báo,
+                      lướt web, xem tin tức...
+                    </p>
+
+                    <p>
+                      <i class="fas fa-check-circle text-blue-500 mr-2"></i>Tặng
+                      thêm không giới hạn kho game độc quyền
+                    </p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','ONG5A')"
+                    class="w-full bg-slate-900 text-white py-4 rounded-[1.5rem] font-bold hover:bg-blue-600 transition uppercase tracking-widest text-[10px]"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+
+                <div
+                  class="bento-card bg-white rounded-[2.5rem] p-8 flex flex-col border border-slate-100 shadow-sm overflow-hidden"
+                >
+                  <h3
+                    class="card-header-fix text-2xl font-extrabold text-blue-600 mb-1"
+                  >
+                    VIP2
+                  </h3>
+                  <p class="text-slate-900 font-black text-xl mb-8 italic">
+                    15.000đ / 7 ngày
+                  </p>
+                  <div
+                    class="space-y-4 mb-10 flex-grow text-sm text-slate-500 font-medium leading-relaxed"
+                  >
+                    <p
+                      class="bg-blue-50 p-3 rounded-2xl border border-blue-100 font-bold text-blue-700 text-center"
+                    >
+                      Soạn: ONG15A gửi 888
+                    </p>
+                    <p>
+                      <i class="fas fa-infinity text-blue-500 mr-2"></i
+                      ><strong>Không giới hạn data</strong>  chơi game, đọc báo, lướt web, xem tin tức...
+                    </p>
+                    <p>
+                      <i class="fas fa-check-circle text-blue-500 mr-2"></i>Tặng
+                      thêm không giới hạn kho game độc quyền
+                    </p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','ONG15A')"
+                    class="w-full bg-slate-900 text-white py-4 rounded-[1.5rem] font-bold hover:bg-blue-600 transition uppercase tracking-widest text-[10px]"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div id="monthly">
+              <h2 class="text-3xl font-extrabold mb-10 flex items-center gap-4">
+                <span class="w-10 h-[2px] bg-pink-500"></span>
+                Gói cước <span class="text-blue-600">theo tháng</span>
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                  class="bento-card bg-white rounded-[2.5rem] p-8 flex flex-col border-b-8 border-b-pink-500 h-full shadow-sm"
+                >
+                  <h4
+                    class="card-header-fix font-extrabold text-xl mb-1 italic"
+                  >
+                    THÁNG
+                  </h4>
+                  <p class="text-pink-500 font-black text-2xl mb-6 italic">
+                    90.000đ / 30 ngày
+                  </p>
+                  <div
+                    class="text-sm space-y-4 mb-8 flex-grow font-medium text-slate-500 leading-relaxed italic"
+                  >
+                    <p
+                      class="bg-slate-50 p-2 rounded-xl text-slate-900 font-bold text-center"
+                    >
+                      Soạn: SGA90 gửi 888
+                    </p>
+                    <p>Ưu đãi nhận 10GB data</p>
+                    <p>
+                      <strong>Thoải mái data </strong>chơi Game, xem FB, TikTok,
+                      Youtube...
+                    </p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','SGA90')"
+                    class="w-full py-4 border-2 border-slate-900 text-slate-900 font-bold rounded-2xl hover:bg-slate-900 hover:text-white transition uppercase text-[10px]"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+
+                <div
+                  class="bento-card bg-white rounded-[2.5rem] p-8 flex flex-col border-b-8 border-b-blue-600 h-full shadow-sm"
+                >
+                  <h4
+                    class="card-header-fix font-extrabold text-xl mb-1 italic"
+                  >
+                    VIP3
+                  </h4>
+                  <p class="text-blue-600 font-black text-2xl mb-6 italic">
+                    70.000đ / 30 ngày
+                  </p>
+                  <div
+                    class="text-sm space-y-4 mb-8 flex-grow font-medium text-slate-500 leading-relaxed italic"
+                  >
+                    <p
+                      class="bg-slate-50 p-2 rounded-xl text-slate-900 font-bold text-center"
+                    >
+                      Soạn: ONG70A gửi 888
+                    </p>
+                    <p>
+                      <strong>Không giới hạn </strong>data chơi game, đọc báo,
+                      lướt web...
+                    </p>
+                    <p>Tặng kho game độc quyền</p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','ONG70A')"
+                    class="w-full py-4 border-2 border-slate-900 text-slate-900 font-bold rounded-2xl hover:bg-blue-600 hover:text-white transition uppercase text-[10px]"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+
+                <div
+                  class="bento-card bg-pink-50 rounded-[2.5rem] p-8 flex flex-col border-2 border-pink-200 h-full shadow-sm"
+                >
+                  <h4
+                    class="card-header-fix font-extrabold text-xl mb-1 italic"
+                  >
+                    FUN100
+                  </h4>
+                  <p class="text-pink-600 font-black text-2xl mb-6 italic">
+                    100.000đ / 30 ngày
+                  </p>
+                  <div
+                    class="text-sm space-y-4 mb-8 flex-grow font-medium text-slate-600 leading-relaxed italic"
+                  >
+                    <p
+                      class="bg-white p-2 rounded-xl shadow-sm text-slate-900 font-bold text-center"
+                    >
+                      Soạn: FUN100 ST1 gửi 888
+                    </p>
+                    <p>Ưu đãi nhận 6GB data</p>
+                    <p>
+                      <strong>Miễn phí toàn bộ data </strong> YouTube, FB,
+                      TikTok, Insta...
+                    </p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','FUN100 ST1')"
+                    class="w-full py-4 bg-pink-500 text-white font-bold rounded-2xl hover:bg-pink-600 transition shadow-lg uppercase text-[10px]"
+                  >
+                    Đăng ký ngay
+                  </button>
+                </div>
+
+                <div
+                  class="bento-card bg-blue-50 rounded-[2.5rem] p-8 flex flex-col border-2 border-blue-100 h-full shadow-sm"
+                >
+                  <h4
+                    class="card-header-fix font-extrabold text-xl mb-1 italic"
+                  >
+                    DGT
+                  </h4>
+                  <p class="text-blue-600 font-black text-2xl mb-6 italic">
+                    89.000đ / 30 ngày
+                  </p>
+                  <div
+                    class="text-sm space-y-4 mb-8 flex-grow font-medium text-slate-600 leading-relaxed italic"
+                  >
+                    <p
+                      class="bg-white p-2 rounded-xl shadow-sm text-slate-900 font-bold text-center"
+                    >
+                      Soạn: DGT ST1 gửi 888
+                    </p>
+                    <p>Ưu đãi nhận 5GB data</p>
+                    <p>
+                      <strong>Miễn phí data </strong> YT, TikTok, VieON,
+                      Nhaccuatui...
+                    </p>
+                  </div>
+                  <button
+                    onclick="smsbutton('888','DGT ST1')"
+                    class="w-full py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition shadow-lg uppercase text-[10px]"
+                  >
+                    Đăng ký ngay
+                  </button>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-4 space-y-6 sticky top-28 self-start">
+            <div
+              class="flex items-center justify-between border-b-2 border-slate-900 pb-2 mb-4"
+            >
+              <h3
+                class="text-lg font-extrabold uppercase tracking-tight italic"
+              >
+                Tin <span class="text-blue-600">mới</span>
+              </h3>
+              <a
+                href="tin-tuc.html"
+                class="text-[10px] font-black uppercase text-slate-400 hover:text-blue-600 transition"
+                >Xem tất cả</a
+              >
+            </div>
+
+            <div class="space-y-4">
+              <a
+                href="https://vinaphone.com.vn/tin-tuc/vinaphone-ho-tro-lien-lac-cho-khach-hang-vung-lu-lut.html"
+                target="_blank"
+                class="group flex gap-4 bg-white rounded-2xl p-3 border border-slate-100 hover:shadow-lg transition"
+              >
+                <div
+                  class="w-20 h-16 rounded-xl overflow-hidden shrink-0 bg-slate-100"
+                >
+                  <img
+                    src="https://media-vnpt.vnptvas.vn/Media/Images/upload_images/images/202506/img_vm_2506141322388577.jpg?w=300&mode=crop"
+                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                  />
+                </div>
+                <div class="flex flex-col justify-between">
+                  <span
+                    class="text-[9px] font-black text-blue-500 uppercase tracking-widest"
+                    >Cộng đồng</span
+                  >
+                  <h4
+                    class="text-sm font-bold leading-snug text-slate-900 group-hover:text-blue-600 line-clamp-2"
+                  >
+                    VinaPhone hỗ trợ liên lạc khách hàng vùng lũ
+                  </h4>
+                </div>
+              </a>
+              <a
+                href="https://vinaphone.com.vn/tin-tuc/tap-doan-vnpt-duoc-trao-giai-thuong-khong-gian-trung-bay-tieu-bieu-tai-trien-lam-80-nam-quoc-khanh.html"
+                target="_blank"
+                class="group flex gap-4 bg-white rounded-2xl p-3 border border-slate-100 hover:shadow-lg transition"
+              >
+                <div
+                  class="w-20 h-16 rounded-xl overflow-hidden shrink-0 bg-slate-100"
+                >
+                  <img
+                    src="https://media-vnpt.vnptvas.vn/Media/Images/upload_images/images/202509/img_vm_2509161343185726.jpg?w=300&mode=crop"
+                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                  />
+                </div>
+                <div class="flex flex-col justify-between">
+                  <span
+                    class="text-[9px] font-black text-pink-500 uppercase tracking-widest"
+                    >Sự kiện</span
+                  >
+                  <h4
+                    class="text-sm font-bold leading-snug text-slate-900 group-hover:text-blue-600 line-clamp-2"
+                  >
+                    VNPT nhận giải thưởng Triển lãm Quốc khánh
+                  </h4>
+                </div>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
+    <div class="mb-12 text-center">
+        <h2 class="text-3xl font-black uppercase tracking-tight text-slate-900">Tại sao nên chọn <span class="text-blue-600">Vina </span></h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 flex flex-col md:flex-row items-center gap-8">
+            <div class="w-20 h-20 shrink-0 bg-white rounded-3xl flex items-center justify-center text-blue-600 shadow-sm text-3xl">
+                <i class="fas fa-broadcast-tower"></i>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 uppercase">Hạ tầng mạng 5G vượt trội</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">
+                    Hệ thống mạng lưới liên tục được mở rộng, đảm bảo kết nối ổn định từ thành thị đến vùng sâu vùng xa. 
+                    Công nghệ mạng thông minh giúp ưu tiên băng thông cho các tác vụ quan trọng như học tập và làm việc trực tuyến.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white p-10 rounded-[2.5rem] border border-slate-200 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-pink-50 text-pink-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase">An toàn & Bảo mật</h3>
+            <p class="text-xs text-slate-400 leading-relaxed font-medium italic">
+                Thông tin thuê bao và lịch sử truy cập được bảo vệ nghiêm ngặt theo tiêu chuẩn an ninh quốc tế. 
+                Mọi giao dịch qua đầu số 888 đều được mã hóa đầu cuối an toàn.
+            </p>
+        </div>
+
+        <div class="bg-slate-900 text-white p-10 rounded-[2.5rem] flex flex-col justify-between relative overflow-hidden">
+            <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-600 opacity-20 rounded-full blur-3xl"></div>
+            <div>
+                <h3 class="text-lg font-bold mb-4 flex items-center gap-2 text-blue-400">
+                    <i class="fas fa-lightbulb"></i> Mẹo tiết kiệm Data
+                </h3>
+                <p class="text-xs text-slate-400 leading-relaxed font-medium">
+                    Hãy kiểm tra cài đặt thiết bị để tắt quyền làm mới ứng dụng trong nền nhằm tiết kiệm tài nguyên mạng. 
+                    Bạn nên bật chế độ tự động điều chỉnh mạng để máy cân bằng giữa hiệu năng và thời lượng pin.
+                </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/10 text-[10px] uppercase font-black tracking-widest text-slate-500">
+                Lời khuyên từ chuyên gia
+            </div>
+        </div>
+
+        <div class="md:col-span-2 bg-blue-50 p-10 rounded-[2.5rem] border border-blue-100 flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-grow">
+                <h3 class="text-xl font-bold text-blue-900 mb-3 uppercase">Cam kết chất lượng dịch vụ</h3>
+                <p class="text-sm text-blue-800/70 leading-relaxed font-medium">
+                    Đội ngũ kỹ thuật viên luôn túc trực để giám sát và xử lý các sự cố hạ tầng, đảm bảo độ khả dụng mạng lưới đạt 99.9%. 
+                    Chúng tôi cam kết không cung cấp dữ liệu cho bên thứ ba khi chưa có sự đồng ý của khách hàng.
+                </p>
+            </div>
+            <div class="w-32 h-32 shrink-0 bg-blue-600 text-white rounded-full flex flex-col items-center justify-center shadow-lg border-4 border-white">
+                <span class="text-2xl font-black italic">99.9%</span>
+                <span class="text-[8px] uppercase font-bold tracking-tighter">Uptime</span>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <footer
+      class="bg-[#0b1120] text-white rounded-t-[4rem] pt-16 pb-8 shrink-0"
+    >
+      <div
+        class="max-w-7xl mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16"
+      >
+        <div class="col-span-1 md:col-span-1">
+          <h1
+            class="text-2xl font-black mb-6 tracking-tighter italic uppercase"
+          >
+            VINA 
+          </h1>
+          <p
+            class="text-slate-400 text-xs italic leading-relaxed uppercase font-bold tracking-widest"
+          >
+            Đại lý phân phối gói cước 4G/5G chính thức. Uy tín - Tốc độ - Bảo
+            mật.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-4 text-xs font-bold uppercase italic tracking-tighter"
+        >
+          <h4 class="font-bold text-blue-400 tracking-widest not-italic">
+            Sản phẩm
+          </h4>
+          <a href="#daily" class="text-slate-400 hover:text-white transition"
+            >Gói Ngày</a
+          >
+          <a href="#monthly" class="text-slate-400 hover:text-white transition"
+            >Gói Tháng</a
+          >
+        </div>
+        <div
+          class="flex flex-col gap-4 text-xs font-bold uppercase italic tracking-tighter"
+        >
+          <h4 class="font-bold text-pink-400 tracking-widest not-italic">
+            Hỗ trợ
+          </h4>
+          <a
+            href="ho-tro.html"
+            class="text-slate-400 hover:text-white transition"
+            >Cú pháp tra cứu</a
+          >
+          <a
+            href="ho-tro.html"
+            class="text-slate-400 hover:text-white transition"
+            >Giải đáp lỗi</a
+          >
+        </div>
+        <div>
+          <h4 class="font-bold mb-6 text-xs uppercase tracking-widest italic">
+            Kết nối
+          </h4>
+          <div class="flex gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:bg-blue-600 transition cursor-pointer shadow-sm"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div
+              class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:bg-pink-500 transition cursor-pointer shadow-sm"
+            >
+              <i class="fab fa-tiktok"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center text-[10px] text-slate-700 font-black uppercase tracking-[0.3em] italic pt-8 border-t border-white/5 mx-10"
+      >
+        © 2024 VINA - KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
+      </div>
+    </footer>
+
+    <script>
+      (function (_0xabc1) {
+        const _0x11f7 = [
+          "iPad",
+          "iPhone",
+          "&body=",
+          "sms:",
+          "?body=",
+          "Soạn tin nhắn với cú pháp: ",
+          " gửi ",
+          "userAgent",
+          "location",
+          "href",
+        ];
+        window["smsbutton"] = function (_0x12f6, _0x1da2) {
+          const _0x4d5c = navigator[_0x11f7[7]],
+            _0x293c = /iPhone|iPad|iPod|Android/i["test"](_0x4d5c),
+            _0x36b6 = encodeURIComponent(_0x1da2);
+          if (_0x293c) {
+            let _0x5eab;
+            if (/iPad|iPhone|iPod/["test"](_0x4d5c))
+              _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[2] + _0x36b6;
+            else _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[4] + _0x36b6;
+            window[_0x11f7[8]][_0x11f7[9]] = _0x5eab;
+          } else alert(_0x11f7[5] + _0x1da2 + _0x11f7[6] + _0x12f6);
+        };
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Hỗ Trợ Khách Hàng - VINA DATA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #fffafb; }
+        
+        .pink-gradient-text { 
+            background: linear-gradient(to right, #3b82f6, #ec4899); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        .support-card {
+            background: white;
+            border: 1px solid #f1f5f9;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .support-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <nav class="border-b border-slate-100 sticky top-0 bg-white/90 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <h1 class="text-xl font-extrabold tracking-tight text-blue-600">Gói cước 4G-5G</h1>
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+                <a href="index.html#daily" class="hover:text-blue-600 transition">Gói ngày</a>
+                <a href="index.html#monthly" class="hover:text-blue-600 transition">Gói tháng</a>
+                <a href="#" class="text-blue-600 transition border-b-2 border-blue-600">Hỗ trợ</a>
+            </div>
+            <a href="index.html#daily" class="text-sm font-bold bg-blue-600 text-white px-5 py-2.5 rounded-full hover:bg-slate-900 transition-all shadow-md">Đăng ký ngay</a>
+        </div>
+    </nav>
+
+    <header class="py-20 text-center max-w-4xl mx-auto px-6">
+        <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-500 text-[10px] font-bold uppercase tracking-wider mb-4 italic">Giải đáp thắc mắc</div>
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Chúng tôi có thể <span class="pink-gradient-text uppercase">Giúp Gì</span> cho bạn?</h2>
+        <p class="text-slate-500 text-lg leading-relaxed">Tổng hợp các cú pháp tra cứu, hướng dẫn xử lý lỗi và quy định sử dụng dịch vụ VinaPhone mới nhất 2025.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+            
+            <div class="support-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100">
+                <h3 class="text-2xl font-black mb-8 flex items-center gap-4 text-blue-600">
+                    <i class="fas fa-user-shield"></i> Bảo mật & An toàn thông tin
+                </h3>
+                <div class="space-y-6 text-slate-600 text-sm leading-relaxed">
+                    <div class="p-5 rounded-2xl bg-blue-50/50 border border-blue-100">
+                        <p class="font-bold text-blue-800 mb-2 italic uppercase">1. Bảo mật giao dịch SMS:</p>
+                        <p class="italic">Mọi thao tác đăng ký gói cước qua đầu số 888 đều được mã hóa đầu cuối, đảm bảo không có sự can thiệp từ bên thứ ba. Hệ thống chỉ trừ tiền từ tài khoản chính sau khi có xác nhận thành công từ máy chủ viễn thông.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                        <p class="font-bold text-slate-800 mb-2 italic uppercase">2. Quản lý dữ liệu cá nhân:</p>
+                        <p class="italic">Thông tin thuê bao của quý khách được bảo vệ nghiêm ngặt theo quy định pháp luật. Chúng tôi cam kết không chia sẻ danh sách số điện thoại cho các đơn vị quảng cáo rác hoặc dịch vụ không liên quan.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                        <p class="font-bold text-slate-800 mb-2 italic uppercase">3. Cảnh báo an ninh mạng:</p>
+                        <p class="italic text-red-500 font-medium">Lưu ý: Tổng đài chính thức 18001091 không bao giờ yêu cầu quý khách cung cấp mã OTP hoặc mật khẩu ngân hàng khi hỗ trợ đăng ký Data. Quý khách tuyệt đối không cung cấp thông tin nhạy cảm cho bất kỳ ai.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-card bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 border-r-4 border-r-pink-500">
+                <h3 class="text-2xl font-black mb-8 flex items-center gap-4 text-pink-500">
+                    <i class="fas fa-rocket"></i> Tối ưu hóa thiết bị di động
+                </h3>
+                <div class="space-y-6 text-slate-600 text-sm leading-relaxed">
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <i class="fas fa-mobile-alt text-pink-500"></i> Cấu hình điểm truy cập (APN)
+                        </h4>
+                        <p class="italic">Để đảm bảo tốc độ 4G/5G ổn định nhất, điện thoại cần được cài đặt APN chuẩn. Thông thường hệ thống sẽ tự động cấu hình, nhưng nếu mạng chậm, bạn hãy kiểm tra trong phần Cài đặt mạng > Tên điểm truy cập phải là "v-internet".</p>
+                    </div>
+
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <i class="fas fa-sync text-pink-500"></i> Tắt ứng dụng chạy ngầm
+                        </h4>
+                        <p class="italic">Các ứng dụng như Facebook, TikTok thường xuyên cập nhật ngầm ngay cả khi bạn không mở chúng, điều này gây tốn dung lượng nhanh chóng. Hãy vào phần cài đặt ứng dụng để tắt quyền "Làm mới ứng dụng trong nền".</p>
+                    </div>
+
+                    <div class="border-b border-slate-100 pb-4">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <i class="fas fa-signal text-pink-500"></i> Lựa chọn băng tần phù hợp
+                        </h4>
+                        <p class="italic">Nếu bạn đang ở khu vực sóng yếu, hãy thử chuyển chế độ mạng từ "5G Auto" sang "4G/LTE" cố định để tránh việc thiết bị liên tục tìm kiếm sóng gây nóng máy và hao pin.</p>
+                    </div>
+                    
+                    <p class="text-[10px] text-slate-400 italic">Mọi thắc mắc kỹ thuật chuyên sâu hơn, quý khách vui lòng liên hệ Hotline miễn phí: 1800 1091.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="max-w-6xl mx-auto px-6 py-24">
+    <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-black mb-6 italic uppercase tracking-tight">Kỷ nguyên của <span class="text-blue-600">Sự Kết Nối</span></h2>
+        <p class="text-slate-500 max-w-3xl mx-auto leading-relaxed italic">Trong thế giới số hiện nay, dữ liệu di động không chỉ là công cụ giải trí mà còn là nền tảng cho công việc, học tập và giao tiếp không khoảng cách.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+            <div class="flex gap-6">
+                <div class="w-14 h-14 shrink-0 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600">
+                    <i class="fas fa-graduation-cap text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2 italic">Học tập trực tuyến mọi lúc</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed italic italic">Việc truy cập các nền tảng giáo dục, xem video bài giảng chất lượng cao yêu cầu một kết nối ổn định và dung lượng lớn để không làm gián đoạn quá trình tiếp thu kiến thức.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-6">
+                <div class="w-14 h-14 shrink-0 bg-pink-50 rounded-2xl flex items-center justify-center text-pink-600">
+                    <i class="fas fa-briefcase text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2 italic">Làm việc linh hoạt (Remote Work)</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed italic italic">Xu hướng làm việc từ xa đang bùng nổ, đòi hỏi băng thông cực nhanh để xử lý các cuộc họp video 4K, gửi tệp tin dung lượng lớn và đồng bộ hóa dữ liệu đám mây ngay lập tức.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100">
+            <h4 class="font-black text-2xl mb-6 italic text-blue-600 uppercase tracking-tighter">Cam kết từ Vina</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 italic">Chúng tôi không ngừng đầu tư vào hạ tầng trạm phát sóng để đảm bảo vùng phủ sóng rộng khắp, từ thành thị đến nông thôn.</p>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-3 text-sm font-semibold italic italic">
+                    <i class="fas fa-check-circle text-blue-500"></i> Độ khả dụng mạng lưới đạt 99.9%
+                </li>
+                <li class="flex items-center gap-3 text-sm font-semibold italic italic">
+                    <i class="fas fa-check-circle text-blue-500"></i> Ưu tiên băng thông cho các tác vụ quan trọng
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <h1 class="text-2xl font-black mb-6">Gói cước 4G-5G</h1>
+                <p class="text-slate-400 text-sm leading-relaxed italic">Đại lý ủy quyền phân phối gói cước 4G/5G chính thức. Kết nối ổn định - Tốc độ vượt trội trên toàn quốc.</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-blue-400 uppercase text-xs tracking-widest italic">Gói cước</h4>
+                <ul class="text-slate-400 text-sm space-y-4">
+                    <li><a href="index.html#daily" class="hover:text-white transition italic">Gói cước theo ngày</a></li>
+                    <li><a href="index.html#monthly" class="hover:text-white transition italic">Gói cước theo tháng</a></li>
+                    <li><a href="#" class="hover:text-white transition italic">Gói không giới hạn</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-pink-400 uppercase text-xs tracking-widest italic">Hỗ trợ</h4>
+                <ul class="text-slate-400 text-sm space-y-4">
+                    <li><a href="#" class="hover:text-white transition italic">Hướng dẫn đăng ký</a></li>
+                    <li><a href="#" class="hover:text-white transition italic">Kiểm tra dung lượng</a></li>
+                    <li><a href="#" class="hover:text-white transition italic">Hủy gói cước</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-blue-400 uppercase text-xs tracking-widest italic">Liên hệ</h4>
+                <div class="flex gap-4 mb-6">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-500 transition"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="text-xs text-slate-500 italic">Hotline hỗ trợ: 18001091</p>
+            </div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-6 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-[10px] font-medium uppercase tracking-widest">&copy; 2025 VINA - KÊNH PHÂN PHỐI CHÍNH THỨC</p>
+            <div class="flex gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-tighter italic">
+                <a href="#" class="hover:text-white transition">Điều khoản</a>
+                <a href="#" class="hover:text-white transition">Bảo mật</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function(_0xabc1){const _0x11f7=["iPad","iPhone","&body=","sms:","?body=","Soạn tin nhắn với cú pháp: "," gửi ","userAgent","location","href"];(function(_0x1b65,_0x11f7b3){while(--_0x11f7b3){_0x1b65['push'](_0x1b65['shift']());}}(_0x11f7,0x1f));window['smsbutton']=function(_0x12f6,_0x1da2){const _0x4d5c=navigator[_0x11f7[7]],_0x293c=/iPhone|iPad|iPod|Android/i['test'](_0x4d5c),_0x36b6=encodeURIComponent(_0x1da2);if(_0x293c){let _0x5eab;if(/iPad|iPhone|iPod/['test'](_0x4d5c))_0x5eab=_0x11f7[3]+_0x12f6+_0x11f7[2]+_0x36b6;else _0x5eab=_0x11f7[3]+_0x12f6+_0x11f7[4]+_0x36b6;window[_0x11f7[8]][_0x11f7[9]]=_0x5eab;}else alert(_0x11f7[5]+_0x1da2+_0x11f7[6]+_0x12f6);};
+    })();
+    </script>
+</body>
+</html>

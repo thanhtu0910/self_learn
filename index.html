@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gói Cước Data Tốc Độ Cao</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .navbar {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .navbar a {
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="navbar text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">5G</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#daily-packages" class="text-white hover:text-yellow-300 transition">Gói Ngày</a>
+                <a href="#monthly-packages" class="text-white hover:text-yellow-300 transition">Gói Tháng</a>
+                <a href="#tips" class="text-white hover:text-yellow-300 transition">Mẹo</a>
+                <a href="#troubleshooting" class="text-white hover:text-yellow-300 transition">Hỗ trợ</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gradient-to-b from-purple-600 to-blue-600 border-t border-purple-700">
+            <a href="#daily-packages" class="block px-4 py-2 text-white hover:bg-yellow-400 hover:text-gray-800">Gói Ngày</a>
+            <a href="#monthly-packages" class="block px-4 py-2 text-white hover:bg-yellow-400 hover:text-gray-800">Gói Tháng</a>
+            <a href="#tips" class="block px-4 py-2 text-white hover:bg-yellow-400 hover:text-gray-800">Mẹo</a>
+            <a href="#troubleshooting" class="block px-4 py-2 text-white hover:bg-yellow-400 hover:text-gray-800">Hỗ trợ</a>
+        </div>
+    </nav>
+
+<!-- HEADER -->
+<header class="bg-blue-600 border-b border-blue-700">
+  <div class="max-w-7xl mx-auto px-6 py-10 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-white">
+      Gói Cước Data Tốc Độ Cao
+    </h1>
+    <p class="mt-3 text-blue-100 text-lg">
+      Đăng ký nhanh – Giá tốt – Không lo gián đoạn
+    </p>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="container mx-auto py-12 px-4">
+        <section id="daily-packages" class="mb-16">
+            <h2 class="text-3xl font-bold mb-10 text-center text-blue-600">Gói cước theo ngày</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200 relative">
+                    <span class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 rounded-bl-lg font-bold text-sm">HOT</span>
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">Ngày</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">5.000đ / ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn SGA1 gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Ưu đãi: nhận 0.3GB data</p>
+                    <p class="text-sm mb-6 text-center"> Thoải mái data chơi Game, xem FB, TikTok...</p>
+                    <button onclick="smsbutton('888','SGA1')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ HOT</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200 relative">
+                    <span class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 rounded-bl-lg font-bold text-sm">HOT</span>
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">Tuần</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">20.000đ / 7 ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn SGA7 gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Ưu đãi: nhận 1GB data</p>
+                    <p class="text-sm mb-6 text-center"> Thoải mái data xem Youtube, TikTok cực mượt</p>
+                    <button onclick="smsbutton('888','SGA7')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200">
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">VIP1</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">5.000đ / ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn ONG5A gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Không giới hạn data chơi game, đọc báo, lướt web...</p>
+                    <p class="text-sm mb-6 text-center"> Tặng thêm không giới hạn kho game độc quyền</p>
+                    <button onclick="smsbutton('888','ONG5A')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200">
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">VIP2</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">15.000đ / 7 ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn ONG15A gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Không giới hạn data chơi game, xem tin tức...</p>
+                    <p class="text-sm mb-6 text-center"> Tặng kho game độc quyền không giới hạn</p>
+                    <button onclick="smsbutton('888','ONG15A')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="monthly-packages" class="mb-16">
+            <h2 class="text-3xl font-bold mb-10 text-center text-blue-600">Gói cước theo tháng</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200">
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">THÁNG</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">90.000đ / 30 ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn SGA90 gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Ưu đãi: nhận 10GB data</p>
+                    <p class="text-sm mb-6 text-center"> Thoải mái data chơi Game, xem FB, TikTok...</p>
+                    <button onclick="smsbutton('888','SGA90')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200">
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">VIP3</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">70.000đ / 30 ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn ONG70A gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Không giới hạn data chơi game, đọc báo, lướt web, xem tin tức...</p>
+                    <p class="text-sm mb-6 text-center"> Tặng thêm không giới hạn kho game độc quyền</p>
+                    <button onclick="smsbutton('888','ONG70A')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200">
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">FUN100</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">100.000đ / 30 ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn FUN100 ST1 gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Ưu đãi: nhận 6GB data</p>
+                    <p class="text-sm mb-6 text-center"> Miễn phí toàn bộ data truy cập các ứng dụng YouTube, Facebook, TikTok, Messenger, Instagram</p>
+                    <button onclick="smsbutton('888','FUN100 ST1')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-blue-200">
+                    <div class="text-center mb-4">
+                        
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center">DGT</h3>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4 text-center">89.000đ / 30 ngày</p>
+                    <p class="mb-3 text-center font-medium">Soạn DGT ST1 gửi 888</p>
+                    <p class="text-sm mb-3 text-center"> Ưu đãi: nhận 5GB data</p>
+                    <p class="text-sm mb-6 text-center"> Miễn phí toàn bộ data truy cập các ứng dụng YouTube, TikTok, VieON, Nhaccuatui</p>
+                    <button onclick="smsbutton('888','DGT ST1')" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-full font-bold hover:from-blue-600 hover:to-blue-700 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="utility-info" class="mb-16 border-t border-gray-100 pt-16">
+            <h2 class="text-3xl font-extrabold mb-12 text-center text-slate-800 uppercase italic">
+                Hệ sinh thái <span class="text-blue-600"> 5G</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 flex flex-col md:flex-row items-center gap-8 shadow-sm">
+                    <div class="w-24 h-24 shrink-0 bg-white rounded-3xl flex items-center justify-center text-blue-600 shadow-sm text-4xl">
+                        
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 uppercase italic">Hạ tầng mạng 5G phủ khắp</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed font-medium italic">
+                            Hệ thống mạng 5G được triển khai trên băng tần hiện đại, đảm bảo tốc độ cao và độ trễ thấp từ đô thị đến nông thôn.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] border border-blue-100 flex flex-col items-center text-center shadow-sm">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-inner">
+                        
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase italic">Cam kết Uptime</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed font-medium italic">
+                        Độ khả dụng mạng lưới đạt 99.9%, hỗ trợ 24/7 và liên tục nâng cấp chất lượng dịch vụ.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900 text-white p-10 rounded-[2.5rem] flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-600 opacity-20 rounded-full blur-3xl"></div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 flex items-center gap-2 text-blue-400 italic font-black">
+                             An Toàn & Bảo Mật
+                        </h3>
+                        <p class="text-xs text-slate-400 leading-relaxed font-medium italic italic">
+                            Thông tin thuê bao và giao dịch qua đầu số 888 được bảo vệ nghiêm ngặt theo tiêu chuẩn an ninh quốc tế.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 bg-blue-600 p-10 rounded-[2.5rem] flex flex-col md:flex-row items-center gap-8 shadow-lg">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase italic">Mẹo Tiết Kiệm Data</h3>
+                        <p class="text-sm text-blue-100 leading-relaxed font-medium italic">
+                            Hãy tắt "Làm mới ứng dụng trong nền" và bật chế độ tự động điều chỉnh mạng để tiết kiệm data và kéo dài thời lượng pin cho thiết bị của bạn.
+                        </p>
+                    </div>
+                    <div class="w-24 h-24 shrink-0 bg-white/10 rounded-full flex items-center justify-center text-white text-3xl border border-white/20">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-12 max-w-4xl mx-auto bg-blue-50 border border-blue-200 rounded-xl p-6 text-sm text-gray-700">
+            <h4 class="font-bold text-blue-700 mb-3">
+                📌 Thông tin & Lưu ý
+            </h4>
+            <ul class="space-y-2">
+                <li>• Áp dụng cho thuê bao đủ điều kiện của nhà mạng.</li>
+                <li>• Gói tự động gia hạn khi hết chu kỳ.</li>
+                <li>• Có thể hủy dịch vụ bất kỳ lúc nào theo cú pháp quy định.</li>
+                <li>• Dung lượng vượt gói tính theo chính sách hiện hành.</li>
+            </ul>
+        </div>
+
+    </main>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t text-center py-6">
+  <p class="text-sm text-gray-500">
+    © 2025 Dịch vụ Data Tốc Độ Cao
+  </p>
+</footer>
+
+
+<script>
+      (function (_0xabc1) {
+        const _0x11f7 = [
+          "iPad",
+          "iPhone",
+          "&body=",
+          "sms:",
+          "?body=",
+          "Soạn tin nhắn với cú pháp: ",
+          " gửi ",
+          "userAgent",
+          "location",
+          "href",
+        ];
+        window["smsbutton"] = function (_0x12f6, _0x1da2) {
+          const _0x4d5c = navigator[_0x11f7[7]],
+            _0x293c = /iPhone|iPad|iPod|Android/i["test"](_0x4d5c),
+            _0x36b6 = encodeURIComponent(_0x1da2);
+          if (_0x293c) {
+            let _0x5eab;
+            if (/iPad|iPhone|iPod/["test"](_0x4d5c))
+              _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[2] + _0x36b6;
+            else _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[4] + _0x36b6;
+            window[_0x11f7[8]][_0x11f7[9]] = _0x5eab;
+          } else alert(_0x11f7[5] + _0x1da2 + _0x11f7[6] + _0x12f6);
+        };
+      })();
+    </script>
+
+    
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const icon = menuBtn.querySelector('i');
+        // Chuyển đổi icon giữa 3 gạch và dấu X
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+</script>
+</body>
+</html>

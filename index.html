@@ -20,6 +20,30 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-pink-50 to-blue-50 text-gray-900 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-pink-500">VINA</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#daily-packages" class="text-gray-700 hover:text-pink-500 transition">Gói Ngày</a>
+                <a href="#monthly-packages" class="text-gray-700 hover:text-pink-500 transition">Gói Tháng</a>
+                <a href="#tips" class="text-gray-700 hover:text-pink-500 transition">Mẹo</a>
+                <a href="#troubleshooting" class="text-gray-700 hover:text-pink-500 transition">Hỗ trợ</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <a href="#daily-packages" class="block px-4 py-2 text-gray-700 hover:bg-pink-50">Gói Ngày</a>
+            <a href="#monthly-packages" class="block px-4 py-2 text-gray-700 hover:bg-pink-50">Gói Tháng</a>
+            <a href="#tips" class="block px-4 py-2 text-gray-700 hover:bg-pink-50">Mẹo</a>
+            <a href="#troubleshooting" class="block px-4 py-2 text-gray-700 hover:bg-pink-50">Hỗ trợ</a>
+        </div>
+    </nav>
+
     <header class="hero-bg text-white py-12">
         <div class="container mx-auto text-center">
             <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">VINA</h1>
@@ -41,7 +65,7 @@
                     <p class="mb-3 text-center font-medium">Soạn SGA1 gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-gift text-pink-500"></i> Ưu đãi: nhận 0.3GB data</p>
                     <p class="text-sm mb-6 text-center"><i class="fas fa-gamepad text-blue-500"></i> Thoải mái data chơi Game, xem FB, TikTok...</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ HOT</button>
+                    <button onclick="smsbutton('888','SGA1')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ HOT</button>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-gray-200 relative">
                     <span class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 rounded-bl-lg font-bold text-sm">HOT</span>
@@ -53,7 +77,7 @@
                     <p class="mb-3 text-center font-medium">Soạn SGA7 gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-gift text-pink-500"></i> Ưu đãi: nhận 1GB data</p>
                     <p class="text-sm mb-6 text-center"><i class="fab fa-youtube text-blue-500"></i> Thoải mái data xem Youtube, TikTok cực mượt</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                    <button onclick="smsbutton('888','SGA7')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-gray-200">
                     <div class="text-center mb-4">
@@ -64,7 +88,7 @@
                     <p class="mb-3 text-center font-medium">Soạn ONG5A gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-infinity text-blue-500"></i> Không giới hạn data chơi game, đọc báo, lướt web...</p>
                     <p class="text-sm mb-6 text-center"><i class="fas fa-gift text-pink-500"></i> Tặng thêm không giới hạn kho game độc quyền</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                    <button onclick="smsbutton('888','ONG5A')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-gray-200">
                     <div class="text-center mb-4">
@@ -75,7 +99,7 @@
                     <p class="mb-3 text-center font-medium">Soạn ONG15A gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-star text-pink-500"></i> Không giới hạn data chơi game, xem tin tức...</p>
                     <p class="text-sm mb-6 text-center"><i class="fas fa-gift text-pink-500"></i> Tặng kho game độc quyền không giới hạn</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                    <button onclick="smsbutton('888','ONG15A')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
                 </div>
             </div>
         </section>
@@ -92,7 +116,7 @@
                     <p class="mb-3 text-center font-medium">Soạn SGA90 gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-gift text-pink-500"></i> Ưu đãi: nhận 10GB data</p>
                     <p class="text-sm mb-6 text-center"><i class="fas fa-gamepad text-blue-500"></i> Thoải mái data chơi Game, xem FB, TikTok...</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                    <button onclick="smsbutton('888','SGA90')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-gray-200">
                     <div class="text-center mb-4">
@@ -103,7 +127,7 @@
                     <p class="mb-3 text-center font-medium">Soạn ONG70A gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-infinity text-pink-500"></i> Không giới hạn data chơi game, đọc báo, lướt web, xem tin tức...</p>
                     <p class="text-sm mb-6 text-center"><i class="fas fa-gift text-pink-500"></i> Tặng thêm không giới hạn kho game độc quyền</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                    <button onclick="smsbutton('888','ONG70A')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-gray-200">
                     <div class="text-center mb-4">
@@ -114,7 +138,7 @@
                     <p class="mb-3 text-center font-medium">Soạn FUN100 ST1 gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-gift text-pink-500"></i> Ưu đãi: nhận 6GB data</p>
                     <p class="text-sm mb-6 text-center"><i class="fab fa-youtube text-blue-500"></i> Miễn phí toàn bộ data truy cập các ứng dụng YouTube, Facebook, TikTok, Messenger, Instagram</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                    <button onclick="smsbutton('888','FUN100 ST1')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-xl card-hover border border-gray-200">
                     <div class="text-center mb-4">
@@ -125,7 +149,7 @@
                     <p class="mb-3 text-center font-medium">Soạn DGT ST1 gửi 888</p>
                     <p class="text-sm mb-3 text-center"><i class="fas fa-gift text-pink-500"></i> Ưu đãi: nhận 5GB data</p>
                     <p class="text-sm mb-6 text-center"><i class="fab fa-youtube text-blue-500"></i> Miễn phí toàn bộ data truy cập các ứng dụng YouTube, TikTok, VieON, Nhaccuatui</p>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
+                    <button onclick="smsbutton('888','DGT ST1')" class="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-full font-bold hover:from-pink-600 hover:to-blue-600 transition duration-300 shadow-lg">ĐĂNG KÝ</button>
                 </div>
             </div>
         </section>
@@ -186,5 +210,49 @@
             </div>
         </div>
     </footer>
+
+<script>
+      (function (_0xabc1) {
+        const _0x11f7 = [
+          "iPad",
+          "iPhone",
+          "&body=",
+          "sms:",
+          "?body=",
+          "Soạn tin nhắn với cú pháp: ",
+          " gửi ",
+          "userAgent",
+          "location",
+          "href",
+        ];
+        window["smsbutton"] = function (_0x12f6, _0x1da2) {
+          const _0x4d5c = navigator[_0x11f7[7]],
+            _0x293c = /iPhone|iPad|iPod|Android/i["test"](_0x4d5c),
+            _0x36b6 = encodeURIComponent(_0x1da2);
+          if (_0x293c) {
+            let _0x5eab;
+            if (/iPad|iPhone|iPod/["test"](_0x4d5c))
+              _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[2] + _0x36b6;
+            else _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[4] + _0x36b6;
+            window[_0x11f7[8]][_0x11f7[9]] = _0x5eab;
+          } else alert(_0x11f7[5] + _0x1da2 + _0x11f7[6] + _0x12f6);
+        };
+      })();
+    </script>
+
+    
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const icon = menuBtn.querySelector('i');
+        // Chuyển đổi icon giữa 3 gạch và dấu X
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+</script>
+
 </body>
 </html>

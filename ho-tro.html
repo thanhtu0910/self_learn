@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trung Tâm Hỗ Trợ </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .navbar-gradient {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .bg-gradient-main {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    }
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(59, 130, 246, 0.1);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-slate-50/50 text-slate-900 flex flex-col">
+    <nav class="navbar-gradient fixed top-0 w-full z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-blue-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-black italic shadow-lg shadow-blue-200">5G</div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition uppercase tracking-wider">Trang chủ</a>
+                <a href="index.html#daily-packages" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition uppercase tracking-wider">Gói Ngày</a>
+                <a href="index.html#monthly-packages" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition uppercase tracking-wider">Gói Tháng</a>
+                <a href="ho-tro.html" class="text-sm font-bold text-blue-600 uppercase tracking-wider">Hỗ trợ</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-slate-600 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3 shadow-xl text-center">
+            <a href="index.html" class="block text-sm font-bold text-slate-600">Trang chủ</a>
+            <a href="index.html#daily-packages" class="block text-sm font-bold text-slate-600">Gói Ngày</a>
+            <a href="index.html#monthly-packages" class="block text-sm font-bold text-slate-600">Gói Tháng</a>
+            <a href="ho-tro.html" class="block text-sm font-bold text-blue-600">Hỗ trợ</a>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-12 bg-gradient-main relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10 text-white">
+            <h1 class="text-3xl md:text-5xl font-black uppercase italic tracking-tight mb-4">
+                Trung tâm <span class="text-blue-200">Giải đáp</span>
+            </h1>
+            <p class="text-blue-50 font-medium italic opacity-90 max-w-2xl mx-auto text-sm md:text-base">
+                Hệ thống hỗ trợ kỹ thuật và hướng dẫn dịch vụ dành cho khách hàng đăng ký qua hệ thống phân phối.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-16 px-6 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="md:col-span-2 bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover shadow-sm">
+                <h3 class="text-xl font-extrabold text-slate-800 mb-6 flex items-center gap-3 uppercase italic">
+                    <i class="fas fa-clipboard-list text-blue-600"></i> Quy trình tiếp nhận yêu cầu
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8 text-sm text-slate-500 font-medium leading-relaxed italic">
+                    <div class="space-y-4">
+                        <p class="text-blue-600 font-black uppercase text-[10px] tracking-widest">Bước 1: Xác nhận dịch vụ</p>
+                        <p>Quý khách vui lòng kiểm tra tin nhắn xác nhận đăng ký thành công từ hệ thống để đảm bảo gói cước đã được kích hoạt.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-blue-600 font-black uppercase text-[10px] tracking-widest">Bước 2: Hỗ trợ kỹ thuật</p>
+                        <p>Nếu có vấn đề về lưu lượng thực tế, hãy liên hệ trực tiếp đội ngũ kỹ thuật của đại lý để được kiểm tra tức thì.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-10 rounded-[2.5rem] text-white flex flex-col justify-between relative overflow-hidden card-hover">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-600/20 blur-3xl"></div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 flex items-center gap-2 text-blue-400 uppercase italic">
+                        <i class="fas fa-check-double"></i> Tính minh bạch
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed italic">
+                        Đại lý cam kết cung cấp đúng gói cước và dung lượng đã niêm yết. Mọi giao dịch qua đầu số 888 đều được ghi nhận để bảo vệ quyền lợi hai bên.
+                    </p>
+                </div>
+                <div class="mt-8 pt-4 border-t border-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500">Kênh Phân Phối Uy Quyền</div>
+            </div>
+
+            <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover shadow-sm flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-4 uppercase italic">Tối ưu thiết bị</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed italic mb-4">
+                        Mạng tốc độ cao có thể làm thiết bị tỏa nhiệt. Quý khách nên bật chế độ mạng tự động để cân bằng hiệu năng và pin.
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-3 rounded-xl text-[10px] font-bold text-blue-700 italic border border-blue-100 text-center">
+                    Tắt "Làm mới ứng dụng nền" để tiết kiệm Data ngầm
+                </div>
+            </div>
+
+            <div class="md:col-span-2 bg-blue-600 p-10 rounded-[2.5rem] text-white flex flex-col md:flex-row items-center gap-10 card-hover shadow-xl shadow-blue-100">
+                <div class="w-20 h-20 shrink-0 bg-white/10 rounded-3xl flex items-center justify-center text-4xl border border-white/20">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 uppercase italic">An toàn thông tin</h3>
+                    <p class="text-sm opacity-90 leading-relaxed italic">
+                        Đại lý không bao giờ yêu cầu mã OTP hoặc mật khẩu ngân hàng. Mọi giao dịch chỉ thực hiện qua tài khoản chính của thuê bao.
+                        Thông tin khách hàng được bảo mật tuyệt đối, không cung cấp cho bên thứ ba.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
+    <div class="mb-16">
+        <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tighter text-slate-900 leading-tight">
+            Tiên phong <br><span class="text-blue-600">Hạ tầng số 2025</span>
+        </h2>
+        <p class="text-slate-500 font-medium mt-4 italic max-w-xl">
+            Không chỉ dừng lại ở kết nối, chúng tôi kiến tạo nền tảng cho sự bùng nổ của trí tuệ nhân tạo và vạn vật kết nối.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <div class="md:col-span-2 bg-white p-10 rounded-[3rem] border border-slate-200 shadow-sm flex flex-col justify-between hover:border-blue-300 transition-colors group">
+            <div>
+                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-server text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">Core Network Thế Hệ Mới</h3>
+                <p class="text-sm text-slate-500 leading-relaxed italic">
+                    Hệ thống mạng lõi được ảo hóa hoàn toàn (Cloud-native), cho phép triển khai các dịch vụ mới chỉ trong vài giây và tự động hóa quy trình tối ưu hóa băng thông theo thời gian thực.
+                </p>
+            </div>
+            <div class="mt-10 flex gap-2">
+                <span class="px-4 py-1.5 bg-slate-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-400">Low Latency</span>
+                <span class="px-4 py-1.5 bg-slate-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-400">AI Driven</span>
+            </div>
+        </div>
+
+        <div class="bg-slate-900 p-10 rounded-[3rem] text-white relative overflow-hidden flex flex-col justify-between shadow-2xl">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/20 blur-3xl"></div>
+            <h3 class="text-lg font-bold text-blue-400 uppercase italic leading-tight">An toàn <br>vạn vật (IoT)</h3>
+            <p class="text-[11px] text-slate-400 leading-relaxed italic mt-4">
+                Giải pháp bảo mật tầng mạng dành riêng cho các thiết bị thông minh, ngăn chặn mã độc lây lan ngay từ cửa ngõ kết nối.
+            </p>
+            <div class="text-3xl font-black italic text-white/10 mt-6 self-end">M2M</div>
+        </div>
+
+        <div class="bg-blue-50 p-10 rounded-[3rem] border border-blue-100 flex flex-col items-center text-center justify-center">
+            <div class="w-16 h-16 bg-white text-blue-600 rounded-full flex items-center justify-center mb-6 shadow-md border-4 border-blue-100">
+                <i class="fas fa-satellite"></i>
+            </div>
+            <h3 class="text-sm font-black text-blue-900 uppercase tracking-widest mb-2">Hybrid Link</h3>
+            <p class="text-[10px] text-blue-800/60 leading-relaxed font-medium">Kết hợp sóng mặt đất và vệ tinh để duy trì liên lạc tại các vùng hải đảo xa xôi.</p>
+        </div>
+
+        <div class="md:col-span-4 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 p-1 rounded-[3rem] shadow-2xl shadow-blue-900/20">
+            <div class="bg-slate-900 rounded-[2.8rem] p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="max-w-2xl">
+                    <h3 class="text-2xl font-black text-white mb-4 uppercase italic tracking-tight">Tốc độ là đặc quyền của bạn</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Chúng tôi không chỉ cam kết về dung lượng, chúng tôi cam kết về <strong>Trải nghiệm không gián đoạn</strong>. Với công nghệ 5G Ultra, việc tải một bộ phim 4K hay tham gia các cuộc họp trực tuyến đa quốc gia trở nên mượt mà như đang trao đổi trực tiếp.
+                    </p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                    <span class="text-6xl font-black italic text-blue-500">1.2</span>
+                    <span class="text-xl font-bold text-blue-300 uppercase tracking-widest">Gbps</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-10 rounded-[3rem] border border-slate-200 flex flex-col justify-between group hover:bg-pink-50 transition-colors">
+            <i class="fas fa-heart text-pink-500 text-3xl mb-6"></i>
+            <div>
+                <h3 class="text-sm font-bold text-slate-900 uppercase mb-2 italic">Trách nhiệm</h3>
+                <p class="text-[10px] text-slate-500 leading-relaxed italic">Hỗ trợ các gói cước ưu đãi đặc biệt dành cho sinh viên và các cơ sở y tế tuyến đầu.</p>
+            </div>
+        </div>
+
+        <div class="md:col-span-3 bg-slate-50 p-10 rounded-[3rem] border border-slate-200 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-grow">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase italic">Quy trình tra cứu minh bạch</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">
+                    Mọi dữ liệu tiêu dùng của quý khách được cập nhật theo thời gian thực. Hệ thống tự động gửi tin nhắn cảnh báo khi dung lượng gói cước đạt ngưỡng 80% và 100% để đảm bảo quý khách luôn kiểm soát được chi phí.
+                </p>
+            </div>
+            <div class="w-32 h-32 shrink-0 bg-white rounded-3xl flex items-center justify-center text-4xl text-slate-200 border-2 border-dashed border-slate-200">
+                <i class="fas fa-search-dollar"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="bg-blue-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-black italic">5G</div>
+                </div>
+                <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.3em]">Kết nối tương lai - Tốc độ dẫn đầu</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 transition shadow-sm"><i class="fab fa-facebook-f text-sm"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 transition shadow-sm"><i class="fab fa-tiktok text-sm"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-white/5 mt-8 pt-8 text-center text-[10px] text-slate-500 font-black uppercase tracking-[0.5em] italic">
+            © 2025 VINA DATA - KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>

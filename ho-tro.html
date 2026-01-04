@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hỗ Trợ Khách Hàng – 5G Data</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .navbar-gradient {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-slate-50/50 text-slate-900">
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-blue-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 
+                  text-white flex items-center justify-center font-black italic shadow-lg">
+        5G
+      </div>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <div class="hidden md:flex items-center gap-10">
+      <a href="#daily-packages"
+         class="text-sm font-bold text-slate-600 hover:text-blue-600 transition relative group">
+        Gói Ngày
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+      </a>
+
+      <a href="#monthly-packages"
+         class="text-sm font-bold text-slate-600 hover:text-blue-600 transition relative group">
+        Gói Tháng
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+      </a>
+
+      <a href="#utility-info"
+         class="text-sm font-bold text-slate-600 hover:text-blue-600 transition relative group">
+        Tiện ích
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+      </a>
+
+      <a href="ho-tro.html"
+         class="px-5 py-2 rounded-full bg-blue-600 text-white text-xs font-black uppercase tracking-widest
+                hover:bg-blue-700 transition shadow-md">
+        Hỗ trợ
+      </a>
+    </div>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menu-btn" class="md:hidden text-blue-600 text-xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu"
+       class="hidden md:hidden bg-white border-t border-blue-100 shadow-xl px-6 py-6 space-y-4">
+
+    <a href="#daily-packages" class="block font-bold text-slate-600 hover:text-blue-600">
+      Gói Ngày
+    </a>
+    <a href="#monthly-packages" class="block font-bold text-slate-600 hover:text-blue-600">
+      Gói Tháng
+    </a>
+    <a href="#utility-info" class="block font-bold text-slate-600 hover:text-blue-600">
+      Tiện ích
+    </a>
+
+    <a href="ho-tro.html"
+       class="block text-center py-3 rounded-xl bg-blue-600 text-white font-black uppercase tracking-widest">
+      Hỗ trợ
+    </a>
+  </div>
+</nav>
+
+<!-- ================= HEADER ================= -->
+ <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 
+                  text-white flex items-center justify-center font-black italic shadow-lg">
+        5G
+      </div>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <div class="hidden md:flex items-center gap-10">
+      <a href="#daily-packages"
+         class="text-sm font-bold text-slate-600 hover:text-blue-600 transition relative group">
+        Gói Ngày
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+      </a>
+
+      <a href="#monthly-packages"
+         class="text-sm font-bold text-slate-600 hover:text-blue-600 transition relative group">
+        Gói Tháng
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+      </a>
+
+      <a href="#utility-info"
+         class="text-sm font-bold text-slate-600 hover:text-blue-600 transition relative group">
+        Tiện ích
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+      </a>
+
+      <a href="ho-tro.html"
+         class="px-5 py-2 rounded-full bg-blue-600 text-white text-xs font-black uppercase tracking-widest
+                hover:bg-blue-700 transition shadow-md">
+        Hỗ trợ
+      </a>
+    </div>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menu-btn" class="md:hidden text-blue-600 text-xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu"
+       class="hidden md:hidden bg-white border-t border-blue-100 shadow-xl px-6 py-6 space-y-4">
+
+    <a href="#daily-packages" class="block font-bold text-slate-600 hover:text-blue-600">
+      Gói Ngày
+    </a>
+    <a href="#monthly-packages" class="block font-bold text-slate-600 hover:text-blue-600">
+      Gói Tháng
+    </a>
+    <a href="#utility-info" class="block font-bold text-slate-600 hover:text-blue-600">
+      Tiện ích
+    </a>
+
+    <a href="ho-tro.html"
+       class="block text-center py-3 rounded-xl bg-blue-600 text-white font-black uppercase tracking-widest">
+      Hỗ trợ
+    </a>
+  </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main class="max-w-7xl mx-auto px-6 py-20 space-y-20">
+
+<!-- ===== SUPPORT METHODS ===== -->
+<section>
+  <h2 class="text-3xl font-black uppercase mb-10 text-slate-800">Các hình thức hỗ trợ</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+      <i class="fas fa-sms text-blue-600 text-3xl mb-4"></i>
+      <h3 class="font-extrabold mb-2 uppercase">Hỗ trợ qua SMS</h3>
+      <p class="text-sm text-slate-500">
+        Soạn <strong>HOTRO</strong> gửi <strong>888</strong> để nhận hướng dẫn
+        sử dụng dịch vụ, kiểm tra gói cước và dung lượng còn lại.
+      </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+      <i class="fas fa-headset text-blue-600 text-3xl mb-4"></i>
+      <h3 class="font-extrabold mb-2 uppercase">Tổng đài hỗ trợ</h3>
+      <p class="text-sm text-slate-500">
+        Tổng đài hoạt động <strong>24/7</strong>, hỗ trợ giải quyết sự cố,
+        khiếu nại và tư vấn gói cước phù hợp.
+      </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+      <i class="fas fa-shield-alt text-blue-600 text-3xl mb-4"></i>
+      <h3 class="font-extrabold mb-2 uppercase">Bảo mật & quyền riêng tư</h3>
+      <p class="text-sm text-slate-500">
+        Thông tin thuê bao và lịch sử đăng ký được bảo vệ theo tiêu chuẩn
+        an toàn viễn thông quốc tế.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section>
+  <h2 class="text-3xl font-black uppercase mb-10 text-slate-800">Câu hỏi thường gặp</h2>
+
+  <div class="space-y-6">
+
+    <div class="bg-white p-6 rounded-2xl border border-slate-100">
+      <h4 class="font-extrabold text-blue-600 mb-2">1. Làm sao để đăng ký gói cước?</h4>
+      <p class="text-sm text-slate-500">
+        Chọn gói cước phù hợp trên website và nhấn <strong>Đăng ký ngay</strong>.
+        Hệ thống sẽ tự động mở tin nhắn SMS với cú pháp chính xác.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl border border-slate-100">
+      <h4 class="font-extrabold text-blue-600 mb-2">2. Gói cước có tự gia hạn không?</h4>
+      <p class="text-sm text-slate-500">
+        Có. Tất cả các gói đều tự động gia hạn khi kết thúc chu kỳ nếu tài khoản đủ tiền.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl border border-slate-100">
+      <h4 class="font-extrabold text-blue-600 mb-2">3. Làm sao để hủy gói?</h4>
+      <p class="text-sm text-slate-500">
+        Soạn <strong>HUY</strong> gửi <strong>888</strong>. Hệ thống sẽ gửi phản hồi xác nhận.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl border border-slate-100">
+      <h4 class="font-extrabold text-blue-600 mb-2">4. Dung lượng vượt gói tính thế nào?</h4>
+      <p class="text-sm text-slate-500">
+        Khi vượt dung lượng ưu đãi, data sẽ tính theo chính sách hiện hành của nhà mạng.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== TERMS ===== -->
+<section class="bg-blue-50 p-10 rounded-3xl border border-blue-100">
+  <h2 class="text-2xl font-black uppercase mb-6 text-blue-700">Điều khoản & lưu ý</h2>
+  <ul class="space-y-3 text-sm text-slate-600 font-medium">
+    <li>✔ Áp dụng cho thuê bao đủ điều kiện.</li>
+    <li>✔ Không áp dụng đồng thời với một số gói khuyến mãi khác.</li>
+    <li>✔ Nhà mạng có quyền thay đổi chính sách khi cần thiết.</li>
+    <li>✔ Mọi tranh chấp được xử lý theo quy định viễn thông.</li>
+  </ul>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (GIỮ NGUYÊN STYLE) ================= -->
+<footer class="bg-blue-50 border-t border-blue-100 px-6 pt-14 pb-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+
+        <!-- Logo & slogan -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-blue-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-black italic shadow-sm">
+                    5G
+                </div>
+            </div>
+            <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">
+                Kết nối tương lai · Tốc độ dẫn đầu
+            </p>
+        </div>
+
+        <!-- Social -->
+        <div class="flex gap-4">
+            <a href="#"
+               class="w-11 h-11 rounded-full bg-white border border-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition shadow-sm">
+                <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a href="#"
+               class="w-11 h-11 rounded-full bg-white border border-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition shadow-sm">
+                <i class="fab fa-tiktok text-sm"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-blue-100 text-center">
+        <p class="text-[10px] text-slate-500 font-black uppercase tracking-[0.4em] italic">
+            © 2025 5G – KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

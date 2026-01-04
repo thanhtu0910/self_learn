@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hỗ Trợ Khách Hàng - VINA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#3b82f6',
+            brandPink: '#f472b6',
+            softPink: '#fdf2f8',
+            softBlue: '#eff6ff',
+          },
+          fontFamily: {
+            sans: ['Quicksand', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { scroll-behavior: smooth; }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    }
+    .text-gradient {
+      background: linear-gradient(to right, #3b82f6, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .btn-gradient {
+      background: linear-gradient(135deg, #3b82f6 0%, #f472b6 100%);
+      transition: all 0.3s ease;
+    }
+    .btn-gradient:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(244, 114, 182, 0.3);
+    }
+    .faq-card {
+      background: white;
+      border: 1px solid #fce7f3;
+      border-radius: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .faq-card:hover {
+      border-color: #f472b6;
+      box-shadow: 0 10px 25px rgba(244, 114, 182, 0.05);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+  <nav class="fixed top-0 w-full z-50 glass-nav border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center text-white font-bold italic shadow-lg">V</div>
+          <span class="text-2xl font-extrabold tracking-tighter text-slate-800">VINA</span>
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-10">
+        <a href="index.html#daily-packages" class="font-bold text-slate-600 hover:text-brandBlue transition">Gói Ngày</a>
+        <a href="index.html#monthly-packages" class="font-bold text-slate-600 hover:text-brandBlue transition">Gói Tháng</a>
+        <a href="index.html#utility-info" class="font-bold text-slate-600 hover:text-brandBlue transition">Tiện ích</a>
+        <a href="#" class="px-6 py-2 rounded-full btn-gradient text-white font-bold shadow-md">Hỗ trợ</a>
+      </div>
+
+      <button id="menu-btn" class="md:hidden text-brandBlue text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-pink-50 px-6 py-6 space-y-4">
+      <a href="index.html#daily-packages" class="block font-bold text-slate-700">Gói Ngày</a>
+      <a href="index.html#monthly-packages" class="block font-bold text-slate-700">Gói Tháng</a>
+      <a href="index.html#utility-info" class="block font-bold text-slate-700">Tiện ích</a>
+      <a href="#" class="block text-center py-3 rounded-xl btn-gradient text-white font-bold">Hỗ trợ</a>
+    </div>
+  </nav>
+
+  <header class="pt-32 pb-12 px-6 bg-gradient-to-b from-softPink to-slate-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Chúng tôi có thể <span class="text-gradient">giúp gì</span> cho bạn?</h1>
+      <p class="text-slate-600">Giải đáp thắc mắc và hỗ trợ kỹ thuật 24/7</p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto py-12 px-6">
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+      <div class="bg-white p-8 rounded-[2rem] border border-blue-100 text-center shadow-sm">
+        <div class="w-16 h-16 bg-softBlue text-brandBlue rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Kiểm tra dung lượng</h3>
+        <p class="text-sm text-slate-500 mb-4">Soạn <span class="font-bold text-brandBlue italic">DATA gửi 888</span></p>
+        <button onclick="smsbutton('888','DATA')" class="text-xs font-bold text-brandBlue uppercase tracking-widest hover:text-brandPink transition">Thực hiện ngay →</button>
+      </div>
+
+      <div class="bg-white p-8 rounded-[2rem] border border-pink-100 text-center shadow-sm">
+        <div class="w-16 h-16 bg-softPink text-brandPink rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Hủy gói cước</h3>
+        <p class="text-sm text-slate-500 mb-4">Soạn <span class="font-bold text-brandPink italic">HUY [Tên gói] gửi 888</span></p>
+        <button class="text-xs font-bold text-brandPink uppercase tracking-widest hover:text-brandBlue transition">Hướng dẫn chi tiết →</button>
+      </div>
+
+      <div class="bg-white p-8 rounded-[2rem] border border-blue-100 text-center shadow-sm">
+        <div class="w-16 h-16 bg-softBlue text-brandBlue rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Tổng đài viên</h3>
+        <p class="text-sm text-slate-500 mb-4">Gọi trực tiếp miễn phí cước</p>
+        <a href="tel:18001091" class="text-xs font-bold text-brandBlue uppercase tracking-widest hover:text-brandPink transition">Gọi 1800 1091 →</a>
+      </div>
+    </div>
+
+    <section class="max-w-4xl mx-auto mb-20">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="h-px flex-grow bg-pink-100"></div>
+        <h2 class="text-2xl font-extrabold text-slate-800 uppercase tracking-tight">Câu hỏi thường gặp</h2>
+        <div class="h-px flex-grow bg-pink-100"></div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="faq-card p-6">
+          <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-3">
+            <span class="text-brandBlue font-black">Q1.</span> Tôi có thể đăng ký nhiều gói cùng lúc không?
+          </h4>
+          <p class="text-sm text-slate-600 pl-9">Thông thường bạn chỉ có thể sử dụng một gói cước chính tại một thời điểm. Tuy nhiên, các gói mua thêm dung lượng có thể sử dụng song song.</p>
+        </div>
+
+        <div class="faq-card p-6 border-l-4 border-l-brandPink">
+          <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-3">
+            <span class="text-brandPink font-black">Q2.</span> Gói cước có tự động gia hạn không?
+          </h4>
+          <p class="text-sm text-slate-600 pl-9">Tất cả các gói cước trên hệ thống đều có tính năng tự động gia hạn nếu tài khoản chính của bạn đủ số dư tại thời điểm gia hạn.</p>
+        </div>
+
+        <div class="faq-card p-6">
+          <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-3">
+            <span class="text-brandBlue font-black">Q3.</span> Làm sao để biết tôi có thuộc đối tượng ưu đãi?
+          </h4>
+          <p class="text-sm text-slate-600 pl-9">Bạn chỉ cần soạn tin theo cú pháp đăng ký, hệ thống sẽ phản hồi miễn phí tình trạng thuê bao của bạn có đủ điều kiện hay không.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-[3rem] p-8 md:p-16 shadow-2xl shadow-blue-100 border border-blue-50 overflow-hidden relative">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-softBlue rounded-full -mr-16 -mt-16"></div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+        <div>
+          <h2 class="text-3xl font-extrabold text-slate-900 mb-6 uppercase">Gửi yêu cầu <span class="text-brandBlue">Hỗ trợ</span></h2>
+          <p class="text-slate-500 mb-8">Để lại thông tin, đội ngũ chăm sóc khách hàng sẽ liên hệ với bạn trong vòng 30 phút.</p>
+          
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 text-slate-600">
+              <i class="fas fa-envelope text-brandPink"></i>
+              <span class="text-sm">hotro@vinadata.vn</span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-600">
+              <i class="fas fa-map-marker-alt text-brandPink"></i>
+              <span class="text-sm">Tòa nhà VNPT, Hà Nội, Việt Nam</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="space-y-4">
+          <input type="text" placeholder="Số điện thoại của bạn" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:border-brandBlue focus:outline-none transition">
+          <select class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:border-brandBlue focus:outline-none transition">
+            <option>Vấn đề cần hỗ trợ</option>
+            <option>Lỗi đăng ký gói</option>
+            <option>Tốc độ mạng chậm</option>
+            <option>Trừ tiền tài khoản</option>
+            <option>Khác</option>
+          </select>
+          <textarea placeholder="Nội dung chi tiết..." rows="4" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:border-brandBlue focus:outline-none transition"></textarea>
+          <button type="button" class="w-full py-4 rounded-2xl btn-gradient text-white font-bold shadow-lg">GỬI YÊU CẦU NGAY</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="mb-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+        
+        <div class="bg-gradient-to-br from-softBlue to-white p-10 rounded-[2.5rem] border border-blue-100 shadow-sm">
+          <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+            <i class="fas fa-project-diagram text-brandBlue"></i> Quy trình hỗ trợ
+          </h3>
+          <div class="space-y-6 relative">
+            <div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-blue-100"></div>
+            
+            <div class="relative pl-10">
+              <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-brandBlue flex items-center justify-center text-[10px] text-white font-bold">1</div>
+              <h5 class="font-bold text-sm text-slate-700">Tiếp nhận yêu cầu</h5>
+              <p class="text-xs text-slate-500">Hệ thống ghi nhận yêu cầu qua Form hoặc Tổng đài ngay lập tức.</p>
+            </div>
+            
+            <div class="relative pl-10">
+              <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-brandBlue flex items-center justify-center text-[10px] text-white font-bold">2</div>
+              <h5 class="font-bold text-sm text-slate-700">Xác minh thuê bao</h5>
+              <p class="text-xs text-slate-500">Kỹ thuật viên kiểm tra trạng thái gói cước trên hệ thống tổng.</p>
+            </div>
+            
+            <div class="relative pl-10">
+              <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-brandBlue flex items-center justify-center text-[10px] text-white font-bold">3</div>
+              <h5 class="font-bold text-sm text-slate-700">Phản hồi & Xử lý</h5>
+              <p class="text-xs text-slate-500">Hoàn tất xử lý và thông báo kết quả cho khách hàng qua SMS.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-softPink to-white p-10 rounded-[2.5rem] border border-pink-100 shadow-sm flex flex-col justify-center">
+          <div class="mb-6">
+            <span class="px-4 py-1 rounded-full bg-white border border-pink-200 text-brandPink text-[10px] font-bold uppercase tracking-widest shadow-sm">🛡️ Security First</span>
+          </div>
+          <h3 class="text-2xl font-extrabold text-slate-800 mb-4 leading-tight">Quyền riêng tư của bạn là <br><span class="text-brandPink">ưu tiên số 1</span></h3>
+          <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+            Chúng tôi hiểu rằng thông tin cá nhân và tài khoản là rất quan trọng. VINA cam kết sử dụng hệ thống mã hóa 2 lớp để bảo vệ mọi giao dịch của bạn.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="flex items-center gap-2 text-xs font-bold text-slate-600">
+              <i class="fas fa-user-secret text-brandPink"></i> Ẩn danh thông tin
+            </div>
+            <div class="flex items-center gap-2 text-xs font-bold text-slate-600">
+              <i class="fas fa-history text-brandPink"></i> Tự xóa lịch sử hỗ trợ
+            </div>
+            <div class="flex items-center gap-2 text-xs font-bold text-slate-600">
+              <i class="fas fa-shield-virus text-brandPink"></i> Quét mã độc 24/7
+            </div>
+            <div class="flex items-center gap-2 text-xs font-bold text-slate-600">
+              <i class="fas fa-key text-brandPink"></i> Không lưu mã OTP
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-pink-100 pt-20 pb-10 px-6 text-center">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col items-center gap-6 mb-12">
+        <div class="w-16 h-16 btn-gradient rounded-[1.5rem] flex items-center justify-center text-white text-2xl font-black italic shadow-xl">V</div>
+        <h2 class="text-2xl font-bold tracking-tighter">VINA</h2>
+        <div class="flex gap-6">
+          <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brandBlue hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brandPink hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-red-500 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="border-t border-slate-100 pt-8">
+        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-[0.3em]">
+          © 2026 VINA – KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // SMS Function (Giữ nguyên để nút Kiểm tra dung lượng hoạt động)
+    (function (_0xabc1) {
+      const _0x11f7 = ["iPad", "iPhone", "&body=", "sms:", "?body=", "Soạn tin nhắn với cú pháp: ", " gửi ", "userAgent", "location", "href"];
+      window["smsbutton"] = function (_0x12f6, _0x1da2) {
+        const _0x4d5c = navigator[_0x11f7[7]],
+          _0x293c = /iPhone|iPad|iPod|Android/i["test"](_0x4d5c),
+          _0x36b6 = encodeURIComponent(_0x1da2);
+        if (_0x293c) {
+          let _0x5eab;
+          if (/iPad|iPhone|iPod/["test"](_0x4d5c))
+            _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[2] + _0x36b6;
+          else _0x5eab = _0x11f7[3] + _0x12f6 + _0x11f7[4] + _0x36b6;
+          window[_0x11f7[8]][_0x11f7[9]] = _0x5eab;
+        } else alert(_0x11f7[5] + _0x1da2 + _0x11f7[6] + _0x12f6);
+      };
+    })();
+
+    // Mobile Menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

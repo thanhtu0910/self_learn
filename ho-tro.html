@@ -157,35 +157,73 @@ menuBtn.addEventListener('click', () => {
 </main>
 
 
-<!-- Footer giống index -->
-<footer class="bg-white border-t border-slate-200 px-6 py-14">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-    <div class="flex flex-col items-center md:items-start text-center md:text-left">
-      <div class="flex items-center gap-3 mb-3">
-        <div class="bg-indigo-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-black italic">VINA</div>
+<footer class="bg-gradient-to-br from-indigo-900 via-indigo-800 to-blue-900 text-white px-6 py-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Logo và giới thiệu -->
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-2xl font-bold">VINA</span>
+        </div>
+        <p class="text-indigo-100 mb-6 leading-relaxed">
+          Kết nối tương lai với mạng 5G siêu tốc. Chúng tôi cung cấp các gói cước linh hoạt, an toàn và tiết kiệm cho mọi nhu cầu của bạn.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="w-12 h-12 rounded-full bg-indigo-700 text-white flex items-center justify-center shadow-lg hover:bg-indigo-600 transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="w-12 h-12 rounded-full bg-pink-600 text-white flex items-center justify-center shadow-lg hover:bg-pink-500 transition">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="#" class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg hover:bg-red-500 transition">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
       </div>
-      <p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Kết nối tương lai · Tốc độ dẫn đầu</p>
-      <div class="flex gap-4 text-indigo-600 text-sm font-medium">
-        <a href="#">Chính sách bảo mật</a>
-        <a href="#">Điều khoản dịch vụ</a>
+
+      <!-- Liên kết nhanh -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">Liên kết nhanh</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html#daily-packages" class="text-indigo-200 hover:text-white transition">Gói Ngày</a></li>
+          <li><a href="index.html#monthly-packages" class="text-indigo-200 hover:text-white transition">Gói Tháng</a></li>
+          <li><a href="index.html#utility-info" class="text-indigo-200 hover:text-white transition">Tiện ích</a></li>
+          <li><a href="#" class="text-indigo-200 hover:text-white transition">Hỗ trợ</a></li>
+        </ul>
+      </div>
+
+      <!-- Thông tin liên hệ -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">Liên hệ</h3>
+        <ul class="space-y-2 text-indigo-200">
+          <li class="flex items-center gap-2">
+            <i class="fas fa-phone"></i>
+            <span>1800-8888</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-envelope"></i>
+            <span>support@vina.vn</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hà Nội, Việt Nam</span>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="flex gap-4">
-      <a href="#" class="w-11 h-11 rounded-full bg-indigo-600 text-white flex items-center justify-center shadow-lg hover:bg-indigo-700 transition">
-        <i class="fab fa-facebook-f text-sm"></i>
-      </a>
-      <a href="#" class="w-11 h-11 rounded-full bg-pink-500 text-white flex items-center justify-center shadow-lg hover:bg-pink-600 transition">
-        <i class="fab fa-tiktok text-sm"></i>
-      </a>
-      <a href="#" class="w-11 h-11 rounded-full bg-red-500 text-white flex items-center justify-center shadow-lg hover:bg-red-600 transition">
-        <i class="fab fa-youtube text-sm"></i>
-      </a>
+
+    <!-- Đường kẻ và bản quyền -->
+    <div class="mt-12 pt-8 border-t border-indigo-700 text-center">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-indigo-300 text-sm">
+          © 2025 VINA – KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
+        </p>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-indigo-300 hover:text-white transition">Chính sách bảo mật</a>
+          <a href="#" class="text-indigo-300 hover:text-white transition">Điều khoản dịch vụ</a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-slate-200 text-center">
-    <p class="text-[10px] text-slate-400 font-black uppercase tracking-[0.4em] italic">
-      © 2025 VINA – KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
-    </p>
   </div>
 </footer>
 

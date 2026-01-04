@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hỗ trợ khách hàng - VINA</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+    .navbar-gradient {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .card-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+
+<!-- Header -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-xl font-bold text-gray-800 uppercase">Vina </span>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html#daily-packages" class="text-gray-700 font-semibold hover:text-indigo-600 transition">Gói Ngày</a>
+      <a href="index.html#monthly-packages" class="text-gray-700 font-semibold hover:text-indigo-600 transition">Gói Tháng</a>
+      <a href="index.html#utility-info" class="text-gray-700 font-semibold hover:text-indigo-600 transition">Tiện ích</a>
+      <a href="#" class="px-5 py-2 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition shadow">Hỗ trợ</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden text-indigo-600 text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-200 px-6 py-6 space-y-4">
+    <a href="index.html#daily-packages" class="block font-semibold text-gray-700 hover:text-indigo-600 transition">Gói Ngày</a>
+    <a href="index.html#monthly-packages" class="block font-semibold text-gray-700 hover:text-indigo-600 transition">Gói Tháng</a>
+    <a href="index.html#utility-info" class="block font-semibold text-gray-700 hover:text-indigo-600 transition">Tiện ích</a>
+    <a href="#" class="block text-center py-3 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition">Hỗ trợ</a>
+  </div>
+</nav>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  const icon = menuBtn.querySelector('i');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-times');
+});
+</script>
+
+<header class="pt-24 pb-12 bg-gradient-to-b from-blue-50 to-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">
+      Hỗ trợ khách hàng VINA
+    </h1>
+    <p class="text-slate-700 text-lg md:text-xl">
+      Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7. Chọn một trong các tùy chọn dưới đây để nhận trợ giúp nhanh chóng.
+    </p>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 py-16 space-y-16">
+
+  <!-- Đoạn 1: Hướng dẫn thanh toán -->
+  <section class="bg-white rounded-2xl shadow-lg p-10">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Hướng dẫn thanh toán</h2>
+    <p class="text-gray-600 mb-6">
+      Bạn có thể thanh toán nhanh chóng qua nhiều kênh khác nhau. Chọn phương thức phù hợp để duy trì dịch vụ liên tục.
+    </p>
+    <ul class="list-disc list-inside text-gray-600 space-y-2">
+      <li>Thanh toán bằng thẻ ngân hàng: Internet Banking, thẻ ATM, thẻ tín dụng.</li>
+      <li>Ví điện tử: Momo, ZaloPay, ViettelPay.</li>
+      <li>Chuyển khoản nhanh: Ngân hàng nội địa hoặc QR Pay.</li>
+    </ul>
+  </section>
+
+  <!-- Đoạn 2: Liên hệ nhanh với tư vấn viên -->
+  <section class="bg-indigo-50 rounded-2xl shadow-lg p-10">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-6">Liên hệ nhanh với tư vấn viên</h2>
+    <div class="space-y-4">
+      <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+        <h3 class="font-semibold text-gray-800 mb-2">Tư vấn gói cước phù hợp</h3>
+        <p class="text-gray-600">Nhấn vào số <strong>1800-8888</strong> để được tư vấn gói cước phù hợp nhu cầu của bạn.</p>
+      </div>
+      <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+        <h3 class="font-semibold text-gray-800 mb-2">Hỗ trợ kỹ thuật</h3>
+        <p class="text-gray-600">Gặp sự cố kết nối hoặc thanh toán, gọi <strong>1900-5555</strong> để được hỗ trợ ngay lập tức.</p>
+      </div>
+      <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+        <h3 class="font-semibold text-gray-800 mb-2">Chat trực tiếp</h3>
+        <p class="text-gray-600">Nhấn nút chat ở góc phải màn hình để nói chuyện trực tiếp với nhân viên hỗ trợ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Đoạn 3: Hướng dẫn cài đặt & kích hoạt -->
+  <section class="bg-white rounded-2xl shadow-lg p-10">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Hướng dẫn cài đặt & kích hoạt</h2>
+    <p class="text-gray-600 mb-6">
+      Để sử dụng dịch vụ, vui lòng thực hiện các bước sau:
+    </p>
+    <ol class="list-decimal list-inside text-gray-600 space-y-2">
+      <li>Tải ứng dụng MyVina hoặc cập nhật phiên bản mới nhất.</li>
+      <li>Đăng nhập tài khoản hoặc tạo mới nếu chưa có.</li>
+      <li>Chọn gói cước và nhấn "Đăng ký".</li>
+      <li>Xác nhận thanh toán qua phương thức bạn chọn.</li>
+      <li>Bắt đầu trải nghiệm dịch vụ ngay lập tức.</li>
+    </ol>
+  </section>
+
+  <!-- Đoạn 4: Câu hỏi thường gặp (FAQ) -->
+  <section class="bg-indigo-50 rounded-2xl shadow-lg p-10">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-6">Câu hỏi thường gặp (FAQ)</h2>
+    <div class="space-y-4">
+      <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+        <h3 class="font-semibold text-gray-800 mb-2">Tôi có thể hủy gói cước bất cứ lúc nào không?</h3>
+        <p class="text-gray-600">Có, bạn có thể hủy dịch vụ qua ứng dụng hoặc liên hệ tổng đài để được hỗ trợ.</p>
+      </div>
+      <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+        <h3 class="font-semibold text-gray-800 mb-2">Data có bị giới hạn tốc độ sau khi dùng hết không?</h3>
+        <p class="text-gray-600">Sau khi hết data, tốc độ sẽ giảm còn 128kbps hoặc áp dụng các gói bổ sung tùy chọn.</p>
+      </div>
+      <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+        <h3 class="font-semibold text-gray-800 mb-2">Tôi có được miễn phí một số ứng dụng không?</h3>
+        <p class="text-gray-600">Các gói FUN, DGT cung cấp miễn phí data truy cập một số ứng dụng như YouTube, TikTok, Messenger...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Đoạn 5: Cam kết chất lượng & bảo mật -->
+  <section class="bg-white rounded-2xl shadow-lg p-10">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Cam kết chất lượng & bảo mật</h2>
+    <p class="text-gray-600 mb-6">
+      Chúng tôi cam kết mang đến dịch vụ ổn định, tốc độ cao và an toàn tuyệt đối cho khách hàng:
+    </p>
+    <ul class="list-disc list-inside text-gray-600 space-y-2">
+      <li>Đảm bảo kết nối 5G tốc độ cao, ổn định mọi lúc.</li>
+      <li>Dữ liệu cá nhân và giao dịch được mã hóa theo chuẩn quốc tế.</li>
+      <li>Hỗ trợ kỹ thuật 24/7 để xử lý mọi sự cố nhanh chóng.</li>
+      <li>Chính sách minh bạch, không phí ẩn, và dễ dàng quản lý gói cước.</li>
+    </ul>
+  </section>
+
+</main>
+
+
+<!-- Footer giống index -->
+<footer class="bg-white border-t border-slate-200 px-6 py-14">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="bg-indigo-600 text-white w-10 h-10 rounded-xl flex items-center justify-center font-black italic">VINA</div>
+      </div>
+      <p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Kết nối tương lai · Tốc độ dẫn đầu</p>
+      <div class="flex gap-4 text-indigo-600 text-sm font-medium">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản dịch vụ</a>
+      </div>
+    </div>
+    <div class="flex gap-4">
+      <a href="#" class="w-11 h-11 rounded-full bg-indigo-600 text-white flex items-center justify-center shadow-lg hover:bg-indigo-700 transition">
+        <i class="fab fa-facebook-f text-sm"></i>
+      </a>
+      <a href="#" class="w-11 h-11 rounded-full bg-pink-500 text-white flex items-center justify-center shadow-lg hover:bg-pink-600 transition">
+        <i class="fab fa-tiktok text-sm"></i>
+      </a>
+      <a href="#" class="w-11 h-11 rounded-full bg-red-500 text-white flex items-center justify-center shadow-lg hover:bg-red-600 transition">
+        <i class="fab fa-youtube text-sm"></i>
+      </a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-slate-200 text-center">
+    <p class="text-[10px] text-slate-400 font-black uppercase tracking-[0.4em] italic">
+      © 2025 VINA – KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

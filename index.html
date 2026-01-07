@@ -63,6 +63,56 @@
       100% { transform: translateY(0px); }
     }
     .float-anim { animation: float 4s ease-in-out infinite; }
+    /* Footer Styles */
+    .footer-wrapper {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 40px 0;
+      color: #334155;
+    }
+    .section-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .col {
+      flex: 1 1 300px;
+      min-width: 250px;
+    }
+    .title-foo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1e293b;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 5px;
+    }
+    .footer-sp {
+      list-style: none;
+      margin: 5px 0;
+    }
+    .footer-sp a {
+      color: #475569;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    .footer-sp a:hover {
+      color: #f472b6;
+    }
+    .absolute-footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .copyright-footer {
+      font-size: 12px;
+    }
   </style>
 </head>
 
@@ -388,24 +438,23 @@
     </section>
   </main>
 
-  <footer class="bg-white border-t border-pink-100 pt-20 pb-10 px-6 text-center">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col items-center gap-6 mb-12">
-        <div class="w-16 h-16 btn-gradient rounded-[1.5rem] flex items-center justify-center text-white text-2xl font-black italic shadow-xl">V</div>
-        <h2 class="text-2xl font-bold tracking-tighter">VINA</h2>
-        <div class="flex gap-6">
-          <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brandBlue hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brandPink hover:text-white transition"><i class="fab fa-tiktok"></i></a>
-          <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-red-500 hover:text-white transition"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="border-t border-slate-100 pt-8">
-        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-[0.3em]">
-          © 2026 VINA – KÊNH PHÂN PHỐI GÓI CƯỚC CHÍNH THỨC
-        </p>
-      </div>
-    </div>
-  </footer>
+<footer id="footer" class="footer-wrapper"><section class="section" id="section_846279337"><div class="section-bg fill"></div><div class="section-content relative"><div class="row" id="row-2041673378"><div id="col-1487181658" class="col medium-3 small-6 large-3"><div class="col-inner"><h3 class="title-foo">Thông Tin Liên Hệ</h3><p style="line-height: 1.5; font-size: 14px;">Đơn vị cung cấp: <strong>VINAPHONE</strong></p><p style="line-height: 1.5; font-size: 14px;">Đơn vị truyền thông: <strong>Công ty cổ phần truyền thông Biztech</strong></p><p style="font-size: 14px;"><strong><i class="fa fa-phone-square"></i> Tổng đài VINAPHONE:</strong> <a href="tel:18001091">18001091</a></p></div></div><div id="col-1533764712" class="col medium-3 small-6 large-3"><div class="col-inner"><h3 class="title-foo">
+<span>Thông Tin 4G Vinaphone</span><br></h3><li class="footer-sp">
+<a href="#"> Đăng ký 3G 4G Vinaphone</a></li><li class="footer-sp">
+<a href="#"> Các gói 4G Vinaphone</a></li><li class="footer-sp">
+<a href="#"> Mua thêm data 4G Vinaphone</a></li></div></div><div id="col-645056579" class="col medium-3 small-6 large-3"><div class="col-inner"><h3 class="title-foo">
+<span>Thông Tin 3G Vinaphone</span><br></h3><li class="footer-sp">
+<a href="#"> Cách đăng ký 3G Vinaphone</a></li><li class="footer-sp">
+<a href="#"> Các gói 3G Vinaphone</a></li><li class="footer-sp">
+<a href="#"> Mua thêm data 3G Vinaphone</a></li></div></div><div id="col-426968645" class="col medium-3 small-6 large-3"><div class="col-inner"><h3 class="title-foo">
+<span>Thông Tin Khuyến Mãi</span><br></h3><li class="footer-sp">
+<a href="#"> Thông tin khuyến mãi VinaPhone</a></li><li class="footer-sp">
+<a href="#"> KM Gọi nội mạng Vinaphone</a></li><li class="footer-sp">
+<a href="#"> Gói cước dành cho thuê bao mới</a></li></div></div></div></div><style>#section_846279337 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}</style></section><div class="absolute-footer dark medium-text-center text-center"><div class="container clearfix"><div class="footer-primary pull-left"><div class="copyright-footer">
+Đây là website đại lý bán hàng chính thức của VinaPhone</div></div></div></div></footer>
 
   <script>
     // SMS Function

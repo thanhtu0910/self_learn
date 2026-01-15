@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VINA – Trung tâm hỗ trợ 4G/5G</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap");
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      background-color: #fff6d6;
+      background-image:
+        radial-gradient(at 0% 0%, rgba(250,204,21,0.45), transparent 60%),
+        radial-gradient(at 100% 100%, rgba(14,165,233,0.18), transparent 65%);
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen text-slate-900">
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 bg-sky-600 border-b border-sky-500">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center gap-8">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-3 shrink-0">
+      <span class="bg-yellow-400 text-sky-900 px-2 py-1 rounded-md font-black italic">5G</span>
+      <h1 class="text-xl font-extrabold uppercase text-white">VINA</h1>
+    </div>
+
+    <!-- MENU + GÓI -->
+    <nav class="flex items-center gap-5 text-xs font-bold uppercase text-white whitespace-nowrap">
+      <a href="#" class="hover:text-yellow-300">Gói ngày</a>
+      <a href="#" class="hover:text-yellow-300">Gói tháng</a>
+      <a href="#" class="hover:text-yellow-300">5G Max</a>
+
+      <span class="w-px h-4 bg-white/30"></span>
+
+      <a href="index.html" class="hover:text-yellow-300">Gói cước</a>
+      <a href="#" class="hover:text-yellow-300">Khuyến mãi</a>
+      <a href="#" class="hover:text-yellow-300">Hỗ trợ</a>
+      <a href="#" class="hover:text-yellow-300">Tin tức</a>
+      <a href="#" class="hover:text-yellow-300">Thông tin</a>
+    </nav>
+
+    <!-- TRẠNG THÁI -->
+    <div class="ml-auto hidden lg:flex items-center gap-4 text-[11px] text-white/90 italic">
+      <span><i class="fas fa-signal text-yellow-300"></i> 4G/5G ổn định</span>
+      <span><i class="fas fa-shield-alt text-yellow-300"></i> Bảo mật</span>
+      <span><i class="fas fa-clock text-yellow-300"></i> 24/7</span>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="max-w-7xl mx-auto px-6 py-16 space-y-20 flex-grow">
+
+  <!-- GIỚI THIỆU -->
+  <section class="text-center max-w-4xl mx-auto">
+    <h2 class="text-4xl font-black uppercase mb-4">
+      Trung tâm hỗ trợ <span class="text-sky-600">VINA</span>
+    </h2>
+    <p class="text-slate-700 italic">
+      VINA là kênh phân phối chính thức các gói cước 4G/5G tại Việt Nam,
+      cung cấp Internet tốc độ cao, ổn định, minh bạch và an toàn cho mọi đối tượng người dùng.
+    </p>
+  </section>
+
+  <!-- LỢI ÍCH -->
+  <section class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-8 rounded-3xl shadow-sm">
+      <h4 class="font-bold text-sky-600 mb-2">Kích hoạt nhanh</h4>
+      <p class="text-sm italic text-slate-600">Đăng ký và kích hoạt tự động chỉ trong vài chục giây.</p>
+    </div>
+    <div class="bg-white p-8 rounded-3xl shadow-sm">
+      <h4 class="font-bold text-sky-600 mb-2">Tốc độ cao</h4>
+      <p class="text-sm italic text-slate-600">Phù hợp học tập, làm việc, giải trí, livestream.</p>
+    </div>
+    <div class="bg-white p-8 rounded-3xl shadow-sm">
+      <h4 class="font-bold text-sky-600 mb-2">An toàn</h4>
+      <p class="text-sm italic text-slate-600">Bảo mật dữ liệu và thông tin thuê bao.</p>
+    </div>
+  </section>
+
+  <!-- HƯỚNG DẪN -->
+  <section class="bg-white p-12 rounded-[3rem] space-y-4">
+    <h3 class="text-2xl font-black text-sky-600 uppercase">Hướng dẫn & xử lý sự cố</h3>
+    <ul class="space-y-2 text-sm italic text-slate-700">
+      <li>• Bật/tắt chế độ máy bay khi mất sóng.</li>
+      <li>• Kiểm tra dung lượng khi mạng chậm.</li>
+      <li>• Đảm bảo tài khoản đủ điều kiện đăng ký.</li>
+      <li>• Liên hệ hỗ trợ khi phát sinh lỗi cước.</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white p-12 rounded-[3rem] space-y-6">
+    <h3 class="text-2xl font-black text-sky-600 uppercase">Câu hỏi thường gặp</h3>
+    <div class="space-y-4 text-sm italic text-slate-700">
+      <p><b>• Gói có tự gia hạn không?</b><br>Chỉ gia hạn khi khách hàng đăng ký gói chu kỳ.</p>
+      <p><b>• Vì sao mạng chậm?</b><br>Phụ thuộc khu vực, thiết bị và thời điểm sử dụng.</p>
+      <p><b>• Còn dung lượng nhưng không vào mạng?</b><br>Khởi động lại thiết bị để cập nhật kết nối.</p>
+      <p><b>• Có hỗ trợ khi trừ cước sai?</b><br>VINA kiểm tra và xử lý đầy đủ cho khách hàng.</p>
+    </div>
+  </section>
+
+  <!-- CAM KẾT -->
+  <section class="bg-sky-600 text-white p-12 rounded-[3rem] space-y-6">
+    <h3 class="text-2xl font-black uppercase">Cam kết dịch vụ</h3>
+    <ul class="space-y-3 text-sm italic">
+      <li>✔ Minh bạch cước phí, không chi phí ẩn.</li>
+      <li>✔ Không tự động gia hạn ngoài ý muốn.</li>
+      <li>✔ Thông tin gói rõ ràng, chính xác.</li>
+      <li>✔ Phản hồi khách hàng trong 24h.</li>
+      <li>✔ Bảo mật tuyệt đối dữ liệu thuê bao.</li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-sky-900 text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 text-xs">
+
+    <div>
+      <h4 class="text-xl font-black text-yellow-400 uppercase mb-4">VINA</h4>
+      <p class="italic text-slate-300">
+        Kênh phân phối gói cước 4G/5G chính thức – Uy tín & Minh bạch.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="font-bold uppercase mb-4 text-sky-300">Sản phẩm</h4>
+      <ul class="space-y-2 text-slate-400">
+        <li>Gói ngày</li>
+        <li>Gói tháng</li>
+        <li>5G Max</li>
+        <li>Gói ưu đãi</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold uppercase mb-4 text-sky-300">Hỗ trợ</h4>
+      <ul class="space-y-2 text-slate-400">
+        <li>Hướng dẫn</li>
+        <li>Tra cứu</li>
+        <li>Sự cố</li>
+        <li>Chính sách</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold uppercase mb-4 text-sky-300">Kết nối</h4>
+      <ul class="space-y-2 text-slate-400">
+        <li>📞 Hotline: 1800 1091</li>
+        <li>💬 Zalo 24/7</li>
+        <li>📘 Facebook</li>
+        <li>🕘 Hỗ trợ liên tục</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="text-center text-[10px] text-slate-500 uppercase mt-12">
+    © 2024 VINA – Trung tâm hỗ trợ 4G/5G
+  </div>
+</footer>
+
+</body>
+</html>
